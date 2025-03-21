@@ -1,36 +1,29 @@
 <header class="header">
-  <div class="container">
-
-      <!-- Logo -->
-      <a href="#" class="logo">MyBrand</a>
-
-      <!-- Navigation Menu -->
-      <nav class="nav">
-          <ul class="nav-list">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
-          </ul>
-      </nav>
-
-      <!-- Sign In Button -->
-      <a href="#" class="btn">Sign In</a>
-
-      <!-- Mobile Menu Button -->
-      <button id="menu-btn" class="menu-btn">
-          ☰
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top" [class.nav-sticky]="!isAtTop">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <span class="logo-light-mode">
+          <img src="/src/assets/flat,750x,075,f-pad,750x1000,f8f8f8.u2.jpg" alt="" class="l-light">
+          <img src="/src/assets/flat,750x,075,f-pad,750x1000,f8f8f8.u2.jpg" alt="" class="l-dark">
+        </span>
+        <img src="/src/assets/flat,750x,075,f-pad,750x1000,f8f8f8.u2.jpg" alt="" class="logo-dark-mode">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-  </div>
 
-  <!-- Mobile Menu -->
-  <nav id="mobile-menu" class="mobile-menu">
-      <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#" class="btn">Sign In</a></li>
-      </ul>
+      <div id="navbarSupportedContent" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item active"><a href="javascript:void(0);" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="javascript:void(0);" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Work</a></li>
+          <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Testimonial</a></li>
+          <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 </header>
