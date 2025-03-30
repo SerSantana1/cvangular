@@ -1,0 +1,47 @@
+.bg-half-100 {
+  padding: 100px 0;
+  background-size: cover !important;
+  align-self: center;
+  position: relative;
+  background-position: center center;
+}
+
+.about-tab-section {
+  .about-tab {
+    .about-tab-pills {
+      background-color: #e8bf9659 !important;
+      gap: 10px;
+      display: flex;
+      height: 60px;
+      max-width: 860px;
+      margin: 0 auto;
+      border-radius: 30px;
+
+      .custom-nav-item {
+        .nav-link {
+          display: inline-block;
+          padding: 18px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 1.5;
+          color: #1d1d1d;
+          border-radius: 100px;
+          width: 100%;
+          position: relative;
+          text-transform: capitalize;
+          transition: all .4s cubic-bezier(.215, .61, .355, 1) 0s;
+          overflow: hidden;
+          display: block;
+
+          &.active {
+            color: #1d1d1d;
+            background-color: #e8bf96;
+          }
+        }
+
+      }
+
+    }
+  }
+
+}
