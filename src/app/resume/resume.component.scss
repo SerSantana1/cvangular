@@ -1,3 +1,7 @@
+.bg-secondary {
+  background-color: #f8f9f9 !important;
+}
+
 .bg-half-100 {
   padding: 100px 0;
   background-size: cover !important;
@@ -13,7 +17,7 @@
       gap: 10px;
       display: flex;
       height: 60px;
-      max-width: 860px;
+      max-width: 387px;
       margin: 0 auto;
       border-radius: 30px;
 
@@ -42,6 +46,64 @@
       }
 
     }
-  }
 
+    .experience-item {
+      border-radius: 15px;
+      padding: 30px;
+      border: 1px solid rgba(0, 0, 0, .1);
+
+      .title {
+        font-size: 21px !important;
+        font-weight: 500 !important;
+        line-height: 1.8;
+        color: #1d1d1d;
+      }
+
+      .expe-company {
+        font-size: 14px !important;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        color: #696969;
+        font-weight: 400 !important;
+      }
+
+      .para-desc {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.8;
+      }
+    }
+
+    .skill-area {
+      background-color: #262629;
+      padding: 74px 30px;
+      border-radius: 150px;
+      margin: 0 20px;
+
+      .skill-img {
+        filter: grayscale(1);
+        transition: .5s;
+        text-align: center !important;
+        margin-bottom: 32px;
+      }
+
+      .skill-percentage {
+        color: #fff;
+        font-weight: 500 !important;
+        line-height: 1.1;
+        font-size: 30px !important;
+        text-transform: capitalize;
+        text-align: center;
+      }
+
+      .skill-pare {
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: capitalize !important;
+        line-height: 1.8;
+        text-align: center;
+        color: #ddd;
+      }
+    }
+  }
 }

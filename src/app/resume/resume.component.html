@@ -13,33 +13,337 @@
       <div class="col-xxl-12">
         <div class="about-tab-section">
           <div class="about-tab">
-
-            <ul ngbNav #nav="ngbNav" class="nav nav-tabs">
-              <li [ngbNavItem]="'about'">
-                <button ngbNavLink>About Me</button>
+            <ul ngbNav #nav="ngbNav" class="nav about-tab-pills mb-5">
+              <li [ngbNavItem]="'about'" class="nav-item custom-nav-item">
+                <button ngbNavLink class="nav-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-inbox d-inline-block"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg>
+                  <span class="ms-1 d-none d-sm-inline-block">about me</span>
+                </button>
                 <ng-template ngbNavContent>
-                  <div [innerHTML]="firstTabContent"></div>
+                  <div
+                    ngbnavpane=""
+                    class="tab-pane fade show"
+                    id="ngb-nav-0-panel"
+                    role="tabpanel"
+                    aria-labelledby="ngb-nav-0"
+                  >
+                    <div
+                      id="pills-about"
+                      role="tabpanel"
+                      aria-labelledby="pills-home-tab"
+                      tabindex="0"
+                      class="tab-pane fade show"
+                    >
+                      <div
+                        class="row align-items-center justify-content-center"
+                      >
+                        <div class="col-lg-6 col-sm-12 col-md-6">
+                          <div class="about-tab-content">
+                            <h4 class="title mt-4">Lead Software Developer</h4>
+                            <p class="para-desc text-muted mx-auto mb-0 mt-3">
+                              Hello, I'm Denny, a seasoned product developer
+                              with a passion for crafting innovative solutions.
+                              I've honed my skills over years of hands-on
+                              experience in the industry, specializing in
+                              creating user-centric products that exceed
+                              expectations. Let's collaborate and bring your
+                              ideas to life!
+                            </p>
+                            <ul class="about-data has_text_move_anim ps-0 mt-5">
+                              <li>
+                                Name <span>:</span
+                                ><strong>Denny fernandez</strong>
+                              </li>
+                              <li>
+                                Nationality <span>:</span
+                                ><strong>Germany</strong>
+                              </li>
+                              <li>
+                                Phone <span>:</span
+                                ><strong>+49 870 174 302</strong>
+                              </li>
+                              <li>
+                                Email <span>:</span><strong>{{ email }}</strong>
+                              </li>
+                              <li>
+                                Experience <span>:</span
+                                ><strong>8+ years</strong>
+                              </li>
+                              <li>
+                                Freelance <span>:</span
+                                ><strong>Available</strong>
+                              </li>
+                              <li>
+                                Skype <span>:</span
+                                ><strong>denny.fernandez104</strong>
+                              </li>
+                              <li>
+                                Language <span>:</span
+                                ><strong>German, English</strong>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 col-md-6">
+                          <div class="developer-about__img">
+                            <div class="about-image">
+                              <img
+                                src="assets/images/person-2.png"
+                                alt="About Me"
+                                class="about-me img-fluid"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!---->
+                  </div>
                 </ng-template>
               </li>
-              <li [ngbNavItem]="'experience'">
-                <button ngbNavLink>Experience</button>
+              <li [ngbNavItem]="'experience'" class="nav-item custom-nav-item">
+                <button ngbNavLink class="nav-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-compass d-inline-block"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+                  <span class="ms-1 d-none d-sm-inline-block">experience</span>
+                </button>
                 <ng-template ngbNavContent>
-                  <h4>Experience</h4>
-                  <p>I've worked as a Senior Developer...</p>
+                  <div
+                    ngbnavpane=""
+                    class="tab-pane fade show"
+                    id="ngb-nav-1-panel"
+                    role="tabpanel"
+                    aria-labelledby="ngb-nav-1"
+                  >
+                    <div
+                      id="pills-experience"
+                      role="tabpanel"
+                      aria-labelledby="pills-profile-experience"
+                      tabindex="0"
+                      class="tab-pane fade show"
+                    >
+                      <div class="row gy-4">
+                        <div class="col-lg-6 col-md-6">
+                          <div class="experience-area">
+                            <div class="experience-item">
+                              <div
+                                class="expe-year-section align-items-center d-flex mb-2"
+                              >
+                                <i class="bi bi-calculator-fill me-2"></i>
+                                <h6 class="expe-year mb-0">2022 -2024</h6>
+                              </div>
+                              <h4 class="title">Senior Software Developer</h4>
+                              <h6 class="expe-company">Creative Developer</h6>
+                              <p class="text-muted para-desc mx-auto mb-0">
+                                Hello, I'm Denny, a seasoned product developer
+                                with a passion for crafting innovative
+                                solutions. I've honed my skills over years of
+                                hands-on experience in the industry.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                          <div class="experience-area">
+                            <div class="experience-item">
+                              <div
+                                class="expe-year-section align-items-center d-flex mb-2"
+                              >
+                                <i class="bi bi-calculator-fill me-2"></i>
+                                <h6 class="expe-year mb-0">2020 -2022</h6>
+                              </div>
+                              <h4 class="title">UI/UX Developer</h4>
+                              <h6 class="expe-company">
+                                Creative UI/UX Design
+                              </h6>
+                              <p class="text-muted para-desc mx-auto mb-0">
+                                Hello, I'm Denny, a seasoned product developer
+                                with a passion for crafting innovative
+                                solutions. I've honed my skills over years of
+                                hands-on experience in the industry.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                          <div class="experience-area">
+                            <div class="experience-item">
+                              <div
+                                class="expe-year-section align-items-center d-flex mb-2"
+                              >
+                                <i class="bi bi-calculator-fill me-2"></i>
+                                <h6 class="expe-year mb-0">2019 -2020</h6>
+                              </div>
+                              <h4 class="title">Junior Web Developer</h4>
+                              <h6 class="expe-company">Web Developer</h6>
+                              <p class="text-muted para-desc mx-auto mb-0 mt-3">
+                                Hello, I'm Denny, a seasoned product developer
+                                with a passion for crafting innovative
+                                solutions. I've honed my skills over years of
+                                hands-on experience in the industry.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                          <div class="experience-area">
+                            <div class="experience-item">
+                              <div
+                                class="expe-year-section align-items-center d-flex mb-2"
+                              >
+                                <i class="bi bi-calculator-fill me-2"></i>
+                                <h6 class="expe-year mb-0">2017 -2019</h6>
+                              </div>
+                              <h4 class="title">Junior App Developer</h4>
+                              <h6 class="expe-company">
+                                Application Developer
+                              </h6>
+                              <p class="text-muted para-desc mx-auto mb-0 mt-3">
+                                Hello, I'm Denny, a seasoned product developer
+                                with a passion for crafting innovative
+                                solutions. I've honed my skills over years of
+                                hands-on experience in the industry.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!---->
+                  </div>
                 </ng-template>
               </li>
-              <li [ngbNavItem]="'skills'">
-                <button ngbNavLink>Skills</button>
+              <li [ngbNavItem]="'skills'" class="nav-item custom-nav-item">
+                <button ngbNavLink class="nav-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket d-inline-block"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg>
+                  <span class="ms-1 d-none d-sm-inline-block">skills</span>
+                </button>
                 <ng-template ngbNavContent>
-                  <h4>Skills</h4>
-                  <p>My skillset includes Angular, Symfony, Unity, Blender...</p>
+                  <div
+                    ngbnavpane=""
+                    class="tab-pane fade show"
+                    id="ngb-nav-3-panel"
+                    role="tabpanel"
+                    aria-labelledby="ngb-nav-3"
+                  >
+                    <div
+                      id="pills-skills"
+                      role="tabpanel"
+                      aria-labelledby="pills-contact-skills"
+                      tabindex="0"
+                      class="tab-pane fade show"
+                    >
+                      <div class="row">
+                        <div class="col-lg-3 col-md-4">
+                          <div class="skill-area mb-5">
+                            <div class="skill-img">
+                              <svg _ngcontent-ng-c139922363="" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 223 236" width="32" class="angular-logo"><g _ngcontent-ng-c139922363="" clip-path="url(#a)"><path _ngcontent-ng-c139922363="" fill="url(#b)" d="m222.077 39.192-8.019 125.923L137.387 0l84.69 39.192Zm-53.105 162.825-57.933 33.056-57.934-33.056 11.783-28.556h92.301l11.783 28.556ZM111.039 62.675l30.357 73.803H80.681l30.358-73.803ZM7.937 165.115 0 39.192 84.69 0 7.937 165.115Z"></path><path _ngcontent-ng-c139922363="" fill="url(#c)" d="m222.077 39.192-8.019 125.923L137.387 0l84.69 39.192Zm-53.105 162.825-57.933 33.056-57.934-33.056 11.783-28.556h92.301l11.783 28.556ZM111.039 62.675l30.357 73.803H80.681l30.358-73.803ZM7.937 165.115 0 39.192 84.69 0 7.937 165.115Z"></path></g><defs _ngcontent-ng-c139922363=""><linearGradient _ngcontent-ng-c139922363="" id="b" x1="49.009" x2="225.829" y1="213.75" y2="129.722" gradientUnits="userSpaceOnUse"><stop _ngcontent-ng-c139922363="" stop-color="#E40035"></stop><stop _ngcontent-ng-c139922363="" offset=".24" stop-color="#F60A48"></stop><stop _ngcontent-ng-c139922363="" offset=".352" stop-color="#F20755"></stop><stop _ngcontent-ng-c139922363="" offset=".494" stop-color="#DC087D"></stop><stop _ngcontent-ng-c139922363="" offset=".745" stop-color="#9717E7"></stop><stop _ngcontent-ng-c139922363="" offset="1" stop-color="#6C00F5"></stop></linearGradient><linearGradient _ngcontent-ng-c139922363="" id="c" x1="41.025" x2="156.741" y1="28.344" y2="160.344" gradientUnits="userSpaceOnUse"><stop _ngcontent-ng-c139922363="" stop-color="#FF31D9"></stop><stop _ngcontent-ng-c139922363="" offset="1" stop-color="#FF5BE1" stop-opacity="0"></stop></linearGradient><clipPath _ngcontent-ng-c139922363="" id="a"><path _ngcontent-ng-c139922363="" fill="#fff" d="M0 0h223v236H0z"></path></clipPath></defs></svg>
+                            </div>
+                            <h4 class="skill-percentage">79%</h4>
+                            <p class="skill-pare mx-auto mb-0">Angular</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                          <div class="skill-area mb-5">
+                            <div class="skill-img">
+                              <img
+                                src="assets/images/Logo/HTML5_logo_and_wordmark.png"
+                                alt="Skill Icon"
+                                class="img-fluid"
+                              />
+                            </div>
+                            <h4 class="skill-percentage">96%</h4>
+                            <p class="skill-pare mx-auto mb-0">Figma</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                          <div class="skill-area mb-30">
+                            <div class="skill-img">
+                              <img
+                                src="assets/images/logo/3.png"
+                                alt="Skill Icon"
+                                class="img-fluid"
+                              />
+                            </div>
+                            <h4 class="skill-percentage">95%</h4>
+                            <p class="skill-pare mx-auto mb-0">Elementor</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                          <div class="skill-area mb-30">
+                            <div class="skill-img">
+                              <img
+                                src="assets/images/logo/6.png"
+                                alt="Skill Icon"
+                                class="img-fluid"
+                              />
+                            </div>
+                            <h4 class="skill-percentage">96%</h4>
+                            <p class="skill-pare mx-auto mb-0">
+                              HTML &amp; CSS
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                          <div class="skill-area mb-md-0 mb-30">
+                            <div class="skill-img">
+                              <img
+                                src="assets/images/logo/5.png"
+                                alt="Skill Icon"
+                                class="img-fluid"
+                              />
+                            </div>
+                            <h4 class="skill-percentage">85%</h4>
+                            <p class="skill-pare mx-auto mb-0">Javascript</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                          <div class="skill-area mb-md-0 mb-30">
+                            <div class="skill-img">
+                              <img
+                                src="assets/images/logo/9.png"
+                                alt="Skill Icon"
+                                class="img-fluid"
+                              />
+                            </div>
+                            <h4 class="skill-percentage">79%</h4>
+                            <p class="skill-pare mx-auto mb-0">React JS</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                          <div class="skill-area mb-md-0 mb-30">
+                            <div class="skill-img">
+                              <img
+                                src="assets/images/logo/7.png"
+                                alt="Skill Icon"
+                                class="img-fluid"
+                              />
+                            </div>
+                            <h4 class="skill-percentage">85%</h4>
+                            <p class="skill-pare mx-auto mb-0">Laravel</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                          <div class="skill-area mb-md-0 mb-30">
+                            <div class="skill-img">
+                              <img
+                                src="assets/images/logo/8.png"
+                                alt="Skill Icon"
+                                class="img-fluid"
+                              />
+                            </div>
+                            <h4 class="skill-percentage">87%</h4>
+                            <p class="skill-pare mx-auto mb-0">Python</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!---->
+                  </div>
                 </ng-template>
               </li>
             </ul>
 
             <div [ngbNavOutlet]="nav"></div>
-
-
           </div>
         </div>
       </div>
