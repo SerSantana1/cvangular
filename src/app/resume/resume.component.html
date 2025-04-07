@@ -16,27 +16,22 @@
             <ul ngbNav #nav="ngbNav" class="nav about-tab-pills mb-5">
               <li [ngbNavItem]="'about'" class="nav-item custom-nav-item">
                 <button ngbNavLink class="nav-link">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-inbox d-inline-block"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-inbox d-inline-block">
+                    <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
+                    <path
+                      d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z">
+                    </path>
+                  </svg>
                   <span class="ms-1 d-none d-sm-inline-block">about me</span>
                 </button>
                 <ng-template ngbNavContent>
-                  <div
-                    ngbnavpane=""
-                    class="tab-pane fade show"
-                    id="ngb-nav-0-panel"
-                    role="tabpanel"
-                    aria-labelledby="ngb-nav-0"
-                  >
-                    <div
-                      id="pills-about"
-                      role="tabpanel"
-                      aria-labelledby="pills-home-tab"
-                      tabindex="0"
-                      class="tab-pane fade show"
-                    >
-                      <div
-                        class="row align-items-center justify-content-center"
-                      >
+                  <div ngbnavpane="" class="tab-pane fade show" id="ngb-nav-0-panel" role="tabpanel"
+                    aria-labelledby="ngb-nav-0">
+                    <div id="pills-about" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0"
+                      class="tab-pane fade show">
+                      <div class="row align-items-center justify-content-center">
                         <div class="col-lg-6 col-sm-12 col-md-6">
                           <div class="about-tab-content">
                             <h4 class="title mt-4">Lead Software Developer</h4>
@@ -51,35 +46,28 @@
                             </p>
                             <ul class="about-data has_text_move_anim ps-0 mt-5">
                               <li>
-                                Name <span>:</span
-                                ><strong>Denny fernandez</strong>
+                                Name <span>:</span><strong>Denny fernandez</strong>
                               </li>
                               <li>
-                                Nationality <span>:</span
-                                ><strong>Germany</strong>
+                                Nationality <span>:</span><strong>Germany</strong>
                               </li>
                               <li>
-                                Phone <span>:</span
-                                ><strong>+49 870 174 302</strong>
+                                Phone <span>:</span><strong>+49 870 174 302</strong>
                               </li>
                               <li>
                                 Email <span>:</span><strong>{{ email }}</strong>
                               </li>
                               <li>
-                                Experience <span>:</span
-                                ><strong>8+ years</strong>
+                                Experience <span>:</span><strong>8+ years</strong>
                               </li>
                               <li>
-                                Freelance <span>:</span
-                                ><strong>Available</strong>
+                                Freelance <span>:</span><strong>Available</strong>
                               </li>
                               <li>
-                                Skype <span>:</span
-                                ><strong>denny.fernandez104</strong>
+                                Skype <span>:</span><strong>denny.fernandez104</strong>
                               </li>
                               <li>
-                                Language <span>:</span
-                                ><strong>German, English</strong>
+                                Language <span>:</span><strong>German, English</strong>
                               </li>
                             </ul>
                           </div>
@@ -87,11 +75,7 @@
                         <div class="col-lg-6 col-sm-12 col-md-6">
                           <div class="developer-about__img">
                             <div class="about-image">
-                              <img
-                                src="assets/images/person-2.png"
-                                alt="About Me"
-                                class="about-me img-fluid"
-                              />
+                              <img src="assets/images/person-2.png" alt="About Me" class="about-me img-fluid" />
                             </div>
                           </div>
                         </div>
@@ -103,31 +87,24 @@
               </li>
               <li [ngbNavItem]="'experience'" class="nav-item custom-nav-item">
                 <button ngbNavLink class="nav-link">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-compass d-inline-block"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-compass d-inline-block">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                  </svg>
                   <span class="ms-1 d-none d-sm-inline-block">experience</span>
                 </button>
                 <ng-template ngbNavContent>
-                  <div
-                    ngbnavpane=""
-                    class="tab-pane fade show"
-                    id="ngb-nav-1-panel"
-                    role="tabpanel"
-                    aria-labelledby="ngb-nav-1"
-                  >
-                    <div
-                      id="pills-experience"
-                      role="tabpanel"
-                      aria-labelledby="pills-profile-experience"
-                      tabindex="0"
-                      class="tab-pane fade show"
-                    >
+                  <div ngbnavpane="" class="tab-pane fade show" id="ngb-nav-1-panel" role="tabpanel"
+                    aria-labelledby="ngb-nav-1">
+                    <div id="pills-experience" role="tabpanel" aria-labelledby="pills-profile-experience" tabindex="0"
+                      class="tab-pane fade show">
                       <div class="row gy-4">
                         <div class="col-lg-6 col-md-6">
                           <div class="experience-area">
                             <div class="experience-item">
-                              <div
-                                class="expe-year-section align-items-center d-flex mb-2"
-                              >
+                              <div class="expe-year-section align-items-center d-flex mb-2">
                                 <i class="bi bi-calculator-fill me-2"></i>
                                 <h6 class="expe-year mb-0">2022 -2024</h6>
                               </div>
@@ -145,9 +122,7 @@
                         <div class="col-lg-6 col-md-6">
                           <div class="experience-area">
                             <div class="experience-item">
-                              <div
-                                class="expe-year-section align-items-center d-flex mb-2"
-                              >
+                              <div class="expe-year-section align-items-center d-flex mb-2">
                                 <i class="bi bi-calculator-fill me-2"></i>
                                 <h6 class="expe-year mb-0">2020 -2022</h6>
                               </div>
@@ -167,9 +142,7 @@
                         <div class="col-lg-6 col-md-6">
                           <div class="experience-area">
                             <div class="experience-item">
-                              <div
-                                class="expe-year-section align-items-center d-flex mb-2"
-                              >
+                              <div class="expe-year-section align-items-center d-flex mb-2">
                                 <i class="bi bi-calculator-fill me-2"></i>
                                 <h6 class="expe-year mb-0">2019 -2020</h6>
                               </div>
@@ -187,9 +160,7 @@
                         <div class="col-lg-6 col-md-6">
                           <div class="experience-area">
                             <div class="experience-item">
-                              <div
-                                class="expe-year-section align-items-center d-flex mb-2"
-                              >
+                              <div class="expe-year-section align-items-center d-flex mb-2">
                                 <i class="bi bi-calculator-fill me-2"></i>
                                 <h6 class="expe-year mb-0">2017 -2019</h6>
                               </div>
@@ -214,33 +185,30 @@
               </li>
               <li [ngbNavItem]="'skills'" class="nav-item custom-nav-item">
                 <button ngbNavLink class="nav-link">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket d-inline-block"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-rocket d-inline-block">
+                    <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
+                    </path>
+                    <path
+                      d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z">
+                    </path>
+                    <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                    <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                  </svg>
                   <span class="ms-1 d-none d-sm-inline-block">skills</span>
                 </button>
                 <ng-template ngbNavContent>
-                  <div
-                    ngbnavpane=""
-                    class="tab-pane fade show"
-                    id="ngb-nav-3-panel"
-                    role="tabpanel"
-                    aria-labelledby="ngb-nav-3"
-                  >
-                    <div
-                      id="pills-skills"
-                      role="tabpanel"
-                      aria-labelledby="pills-contact-skills"
-                      tabindex="0"
-                      class="tab-pane fade show"
-                    >
+                  <div ngbnavpane="" class="tab-pane fade show" id="ngb-nav-3-panel" role="tabpanel"
+                    aria-labelledby="ngb-nav-3">
+                    <div id="pills-skills" role="tabpanel" aria-labelledby="pills-contact-skills" tabindex="0"
+                      class="tab-pane fade show">
                       <div class="row">
                         <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-5">
                             <div class="skill-img">
-                              <img
-                              src="assets/images/Logo/icon_angular_wht.svg"
-                              alt="Skill Icon"
-                              class="img-fluid"
-                            />                            </div>
+                              <img src="assets/images/Logo/angular-icon-seeklogo.png" alt="Skill Icon" class="img-fluid" />
+                            </div>
                             <h4 class="skill-percentage">79%</h4>
                             <p class="skill-pare mx-auto mb-0">Angular</p>
                           </div>
@@ -248,11 +216,8 @@
                         <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-5">
                             <div class="skill-img">
-                              <img
-                                src="assets/images/Logo/HTML5_logo_and_wordmark.png"
-                                alt="Skill Icon"
-                                class="img-fluid"
-                              />
+                              <img src="assets/images/Logo/HTML5_logo_and_wordmark.png" alt="Skill Icon"
+                                class="img-fluid" />
                             </div>
                             <h4 class="skill-percentage">96%</h4>
                             <p class="skill-pare mx-auto mb-0">HTML &amp; CSS</p>
@@ -261,11 +226,7 @@
                         <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-30">
                             <div class="skill-img">
-                              <img
-                                src="assets/images/Logo/symfony_dynamic_02.svg"
-                                alt="Skill Icon"
-                                class="img-fluid"
-                              />
+                              <img src="assets/images/Logo/icons8-symfony.svg" alt="Skill Icon" class="img-fluid" />
                             </div>
                             <h4 class="skill-percentage">95%</h4>
                             <p class="skill-pare mx-auto mb-0">Symfony</p>
@@ -274,7 +235,7 @@
                         <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-30">
                             <div class="skill-img">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="275" height="100"><path fill="#110b09" d="M 82.775,79.842 64.9,49.775 82.775,19.708 91.392,49.775 Z M 42.992,76.908 20.533,54.633 h 35.75 L 74.158,84.7 Z m 0,-54.358 31.075,-7.792 -17.875,30.067 H 20.442 Z M 88.642,0 48.033,10.542 41.983,20.9 29.792,20.808 0,49.775 29.792,78.742 41.983,78.65 48.033,89.008 88.642,99.642 99.55,60.133 93.408,49.867 99.55,39.6 Z m 92.216,29.242 c -5.408,0 -9.075,2.291 -11.825,6.508 h -0.183 v -5.408 h -9.533 v 39.783 h 9.716 v -22.55 c 0,-5.408 3.392,-9.167 8.067,-9.167 4.4,0 7.7,2.659 7.7,7.334 v 24.475 h 9.717 V 44.183 c 0.091,-8.708 -5.409,-14.941 -13.659,-14.941 z m -36.3,24.108 c 0,5.317 -3.025,8.983 -7.975,8.983 -4.491,0 -7.333,-2.566 -7.333,-7.241 v -24.75 h -9.717 v 26.583 c 0,8.708 4.95,14.392 13.842,14.392 5.592,0 8.708,-2.109 11.367,-5.775 h 0.275 v 4.675 h 9.35 V 30.342 H 144.65 V 53.35 Z m 55.184,-23.008 h 9.716 v 39.783 h -9.716 z m 0,-12.375 h 9.716 v 7.975 h -9.716 z m 64.808,12.375 -5.775,17.966 c -1.283,3.667 -2.292,8.709 -2.292,8.709 h -0.275 c 0,0 -1.283,-5.042 -2.566,-8.709 l -6.509,-17.966 h -10.45 l 10.725,28.325 c 2.292,6.05 3.025,8.616 3.025,10.816 0,3.3 -1.741,5.409 -5.866,5.409 h -3.759 v 8.341 h 6.234 c 8.066,0 10.908,-3.208 13.933,-12.008 L 275,30.433 H 264.55 Z M 227.608,58.483 V 37.4 h 6.234 v -6.967 h -6.234 V 17.967 h -9.716 v 12.375 h -5.5 v 6.966 h 5.5 v 23.375 c 0,7.517 5.683,9.534 10.816,9.534 4.217,0 5.317,-0.184 5.317,-0.184 v -7.7 h -2.475 c -2.292,0.092 -3.942,-0.916 -3.942,-3.85 z"/></svg>
+                              <img src="assets/images/Logo/icons8-unity.svg" alt="Skill Icon" class="img-fluid" />
                             </div>
                             <h4 class="skill-percentage">96%</h4>
                             <p class="skill-pare mx-auto mb-0">
@@ -285,11 +246,7 @@
                         <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-md-0 mb-30">
                             <div class="skill-img">
-                              <img
-                                src="assets/images/Logo/javascript-logo.svg"
-                                alt="Skill Icon"
-                                class="img-fluid"
-                              />
+                              <img src="assets/images/Logo/javascript-logo.svg" alt="Skill Icon" class="img-fluid" />
                             </div>
                             <h4 class="skill-percentage">85%</h4>
                             <p class="skill-pare mx-auto mb-0">Javascript</p>
@@ -298,40 +255,38 @@
                         <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-md-0 mb-30">
                             <div class="skill-img">
-                              <img
-                                src="assets/images/logo/9.png"
-                                alt="Skill Icon"
-                                class="img-fluid"
-                              />
+                              <img src="assets/images/Logo/mysql-logo.svg" alt="Skill Icon" class="img-fluid" />
                             </div>
                             <h4 class="skill-percentage">79%</h4>
-                            <p class="skill-pare mx-auto mb-0">React JS</p>
+                            <p class="skill-pare mx-auto mb-0">MySQL</p>
                           </div>
                         </div>
                         <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-md-0 mb-30">
                             <div class="skill-img">
-                              <img
-                                src="assets/images/logo/7.png"
-                                alt="Skill Icon"
-                                class="img-fluid"
-                              />
+                              <img src="assets/images/Logo/prestashop-logo.svg" alt="Skill Icon" class="img-fluid" />
                             </div>
                             <h4 class="skill-percentage">85%</h4>
-                            <p class="skill-pare mx-auto mb-0">Laravel</p>
+                            <p class="skill-pare mx-auto mb-0">PrestaShop</p>
                           </div>
                         </div>
                         <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-md-0 mb-30">
                             <div class="skill-img">
-                              <img
-                                src="assets/images/logo/8.png"
-                                alt="Skill Icon"
-                                class="img-fluid"
-                              />
+                              <img src="assets/images/Logo/git-icon-logo.svg" alt="Skill Icon" class="img-fluid" />
                             </div>
                             <h4 class="skill-percentage">87%</h4>
-                            <p class="skill-pare mx-auto mb-0">Python</p>
+                            <p class="skill-pare mx-auto mb-0">Git</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                          <div class="skill-area mb-md-0 mb-30">
+                            <div class="skill-img">
+                              <img src="assets/images/Logo/ovhcloud-logo-vector.svg" alt="Skill Icon"
+                                class="img-fluid" />
+                            </div>
+                            <h4 class="skill-percentage">87%</h4>
+                            <p class="skill-pare mx-auto mb-0">Ovh</p>
                           </div>
                         </div>
                       </div>

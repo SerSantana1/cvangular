@@ -76,9 +76,13 @@
 
     .skill-area {
       background-color: #262629;
-      padding: 74px 30px;
+      padding: 91px 88px;
       border-radius: 150px;
       margin: 0 20px;
+
+      :hover.skill-img {
+        filter: grayscale(0);
+    }
 
       .skill-img {
         filter: grayscale(1);

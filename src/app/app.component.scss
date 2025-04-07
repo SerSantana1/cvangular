@@ -10,32 +10,6 @@ main{
 }
 
 
-body {
-
-  background: black;
-  font-family: 'Courier New', monospace;
-}
-
-.matrix-char {
-  position: absolute;
-  color: #00ff41;
-  font-size: 16px;
-  font-weight: bold;
-  font-family: 'Courier New', monospace;
-  pointer-events: none;
-  z-index: 9999;
-  user-select: none;
-  text-shadow:
-    0 0 5px #00ff41,
-    0 0 10px #00ff41,
-    0 0 20px #00ff41;
-  transition: opacity 1s ease-out, transform 2s ease-out;  // Slower transition for falling and fading
-}
-
-.fade {
-  transform: translateY(25px);  // Increase fall distance for slower effect
-  opacity: 0;
-}
 
 
 
