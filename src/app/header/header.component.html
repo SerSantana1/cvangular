@@ -15,13 +15,11 @@
 
       <div id="navbarSupportedContent" class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item active"><a href="javascript:void(0);" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="javascript:void(0);" class="nav-link">About Us</a></li>
-          <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Work</a></li>
-          <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Services</a></li>
-          <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Testimonial</a></li>
-          <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Blog</a></li>
-          <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Contact</a></li>
+          <li class="nav-item active"><a href="#home" class="nav-link" [class.nav-link-black]="!isAtTop">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link" [class.nav-link-black]="!isAtTop">About Me</a></li>
+          <li class="nav-item"><a href="javascript:void(0);" class="nav-link" [class.nav-link-black]="!isAtTop">Work</a></li>
+          <li class="nav-item"><a href="javascript:void(0);" class="nav-link" [class.nav-link-black]="!isAtTop">Services</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link" [class.nav-link-black]="!isAtTop">Contattami</a></li>
         </ul>
       </div>
     </div>

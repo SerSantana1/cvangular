@@ -109,5 +109,29 @@
         color: #ddd;
       }
     }
+    .about-tab-content {
+      .about-data li {
+        padding-left: 0;
+        margin-left: 0;
+        display: grid;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.6;
+        padding-bottom: 5px;
+        grid-template-columns: 130px 40px auto;
+    }
+    }
+  }
+}.title-section {
+  .title-sub-heading {
+    color: #ebb884;
+    font-size: 12px !important;
+    text-transform: uppercase;
+    padding: 7px 30px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    border: 1px solid #ebb884;
+    display: inline-block;
   }
 }
+

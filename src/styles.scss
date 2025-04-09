@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+.title-section {
+  .title-sub-heading {
+    color: #ebb884;
+    font-size: 12px !important;
+    text-transform: uppercase;
+    padding: 7px 30px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    border: 1px solid #ebb884;
+    display: inline-block;
+  }
+}
