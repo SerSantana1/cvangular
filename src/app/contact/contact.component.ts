@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { log } from 'console';
+import { Component, ViewChild } from '@angular/core';
+import { FormsModule, NgForm } from '@angular/forms';
+import { environment } from '../../environments/environment.development';
+import emailjs from '@emailjs/browser';
+
 
 @Component({
   selector: 'app-contact',
@@ -9,27 +11,32 @@ import { log } from 'console';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
+  mail = environment.email
   formData = {
     email: '',
     ragione: '',
     messaggio: '',
   }
 
-  messageText = '';
 
-  onSubmit (){
+  messageText = '';
+  messageType: 'success' | 'error' | '' = '';
+  showMessage = false;
+  @ViewChild('contactForm') contactForm!: NgForm;
+
+  async onSubmit (){
     try {
       await emailjs.send(
-        'service_o4b50l1',
-        'template_3uzbd9n',
+        'service_d7dj3r5',
+        'template_7t5ghi6',
         {
           from_email: this.formData.email,
-          to_email: 'info@vitolabate.it',
+          to_email: this.mail,
           RagioneSociale: this.formData.ragione || 'Non specificato',
-          messaggio: this.formData.messaggio || '',
+          messaggio: this.formData.messaggio || 'messaggio vuoto',
           date: new Date().toLocaleString()
         },
-        '2pAPtMp27e-_tNgiF'
+        'fp7T88-4xgvbK_7AQ'
       );
 
       this.messageType = 'success';
