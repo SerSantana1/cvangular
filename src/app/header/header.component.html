@@ -2,11 +2,13 @@
   <nav id="navbar" class="navbar navbar-expand-lg fixed-top" [class.nav-sticky]="!isAtTop">
     <div class="container">
       <a href="index.html" class="navbar-brand">
+        @if (isAtTop) {
         <span class="logo-light-mode">
-          <img src="assets/images/without-bg-white.png" alt="" class="l-light">
-          <img src="assets/images/without-bg.png" alt="" class="l-dark">
+          <img src="assets/images/Logo-white.png" alt="" class="l-light">
         </span>
-        <img src="assets/images/without-bg.png" alt="" class="logo-dark-mode">
+      }@else{
+        <img src="assets/images/Logo.png" alt="" class="logo-dark-mode">
+      }
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,8 +19,6 @@
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item active"><a href="#home" class="nav-link" [class.nav-link-black]="!isAtTop">Home</a></li>
           <li class="nav-item"><a href="#about" class="nav-link" [class.nav-link-black]="!isAtTop">About Me</a></li>
-          <li class="nav-item"><a href="javascript:void(0);" class="nav-link" [class.nav-link-black]="!isAtTop">Work</a></li>
-          <li class="nav-item"><a href="javascript:void(0);" class="nav-link" [class.nav-link-black]="!isAtTop">Services</a></li>
           <li class="nav-item"><a href="#contact" class="nav-link" [class.nav-link-black]="!isAtTop">Contattami</a></li>
         </ul>
       </div>
