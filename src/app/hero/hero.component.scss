@@ -7,3 +7,15 @@
   color: white;
   background-image: url('../../assets/images/bg.jpg')
 }
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+}
+
+.scroll-reveal.animate-in,
+.scroll-reveal.always-animate {
+  opacity: 1;
+  transform: translateY(0);
+}

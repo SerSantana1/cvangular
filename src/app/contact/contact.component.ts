@@ -2,11 +2,12 @@ import { Component, ViewChild } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { environment } from '../../environments/environment.development';
 import emailjs from '@emailjs/browser';
+import { ScrollAnimationDirective } from '../scroll-animation.directive';
 
 
 @Component({
   selector: 'app-contact',
-  imports: [FormsModule],
+  imports: [FormsModule, ScrollAnimationDirective],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
