@@ -74,8 +74,15 @@
 
 }
 
+.hover-opacity {
+  transition: opacity 0.2s ease;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
 .img-fluid {
-  width: 5rem;
+  max-height: 80px; width: auto; object-fit: contain;
 }
 
 ::placeholder{
