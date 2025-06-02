@@ -21,7 +21,14 @@ declare const window: any;
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'CVAngular';
+
+
+  ngOnInit() {
+    if (performance.navigation.type === 1) {
+      window.location.href = window.location.origin;
+    }
+  }
+
 
   constructor(private CookieManagerService: CookieManagerService) {}
 
