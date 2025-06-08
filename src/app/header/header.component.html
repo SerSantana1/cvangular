@@ -15,7 +15,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div id="navbarSupportedContent" class="collapse navbar-collapse">
+      <div id="navbarSupportedContent" class="collapse navbar-collapse" [class.nav-sticky]="!isAtTop">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item active"><a href="#home" class="nav-link" [class.nav-link-black]="!isAtTop">Home</a></li>
           <li class="nav-item"><a href="#about" class="nav-link" [class.nav-link-black]="!isAtTop">About Me</a></li>

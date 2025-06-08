@@ -9,7 +9,7 @@
       </div>
 
 
-      <div class="col-6 scroll-reveal delay-3" appScrollAnimation>
+      <div class="col-12 col-md-6 scroll-reveal delay-3" appScrollAnimation>
         <div class="contact-right mt-md-0 mt-3">
           <form (ngSubmit)="onSubmit()" #contactForm="ngForm" novalidate="" class="ng-untouched ng-pristine ng-invalid">
             <div class="row">
@@ -58,7 +58,7 @@
                   {{messageText}}
                 </div>
                 }
-                <div>
+                <div class="text-center text-md-start">
                   <button type="submit" class="btn btn-primary rounded-pill mt-5" [disabled]="contactForm.invalid">
                     Invia messaggio
                   </button>

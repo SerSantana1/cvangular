@@ -81,14 +81,22 @@
   }
 
   .collapse.show {
-    display: block !important;
-    background-color: rgba(0, 0, 0, 0.8);
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    z-index: 9999;
+        display: block !important;
+        background-color: transparent;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+
   }
+
+   .navbar-collapse{
+      &.nav-sticky {
+    background-color: white; /* Change background color on scroll */
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  }
+}
 
   .navbar-nav {
     display: flex;
@@ -100,9 +108,7 @@
     margin: 10px 0;
   }
 
-  .nav-link {
-    color: #fff;
-  }
+
 }
 
 /* Custom scroll styles for sticky header */
