@@ -27,9 +27,9 @@ declare const TweenMax: any;
 })
 export class AppComponent {
   ngOnInit() {
-    if (performance.navigation.type === 1) {
-      window.location.href = window.location.origin;
-    }
+   // if (performance.navigation.type === 1) {
+   //   window.location.href = window.location.origin;
+    //}
   }
 
   constructor(private CookieManagerService: CookieManagerService) { }
