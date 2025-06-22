@@ -15,60 +15,58 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:application",
-          "options": {
-            "outputPath": "docs",
-            "index": "src/index.html",
-            "browser": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
-            "tsConfig": "tsconfig.app.json",
-            "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "node_modules/cookieconsent/build/cookieconsent.min.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.scss"
-            ],
-            "scripts": [
-              "node_modules/cookieconsent/build/cookieconsent.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-            ]
-          },
-          "configurations": {
-            "production": {
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "4kB",
-                  "maximumError": "8kB"
-                }
-              ],
-              "outputHashing": "all"
-            },
-            "development": {
-              "optimization": false,
-              "extractLicenses": false,
-              "sourceMap": true,
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.development.ts"
-                }
-              ]
-            }
-          },
-          "defaultConfiguration": "production"
+  "builder": "@angular-devkit/build-angular:browser",
+  "options": {
+    "outputPath": "docs",
+    "index": "src/index.html",
+    "main": "src/main.ts",
+    "polyfills": ["zone.js"],
+    "tsConfig": "tsconfig.app.json",
+    "inlineStyleLanguage": "scss",
+    "assets": [
+      "src/favicon.ico",
+      "src/assets"
+    ],
+    "styles": [
+      "node_modules/cookieconsent/build/cookieconsent.min.css",
+      "node_modules/bootstrap/dist/css/bootstrap.min.css",
+      "src/styles.scss"
+    ],
+    "scripts": [
+      "node_modules/cookieconsent/build/cookieconsent.min.js",
+      "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    ]
+  },
+  "configurations": {
+    "production": {
+      "budgets": [
+        {
+          "type": "initial",
+          "maximumWarning": "500kB",
+          "maximumError": "1MB"
         },
+        {
+          "type": "anyComponentStyle",
+          "maximumWarning": "4kB",
+          "maximumError": "8kB"
+        }
+      ],
+      "outputHashing": "all"
+    },
+    "development": {
+      "optimization": false,
+      "extractLicenses": false,
+      "sourceMap": true,
+      "fileReplacements": [
+        {
+          "replace": "src/environments/environment.ts",
+          "with": "src/environments/environment.development.ts"
+        }
+      ]
+    }
+  },
+  "defaultConfiguration": "production"
+},
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
