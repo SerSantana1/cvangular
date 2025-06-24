@@ -27,3 +27,13 @@ html{
       }
     }
   }
+
+  @media (hover: none) and (pointer: coarse) {
+  * {
+    cursor: auto !important; // Reset cursor for touch devices
+  }
+
+  .cursor {
+    display: none !important; // Hide custom cursor container
+  }
+}
