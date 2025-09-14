@@ -3,8 +3,8 @@
     <div class="row align-items-center">
       <div class="col-xxl-12 text-center">
         <div class="title-section">
-          <h1 class="title-sub-heading mb-2">resume</h1>
-          <h2 class="title-main-heading mb-4">My resume</h2>
+          <h1 class="title-sub-heading mb-2">{{ 'ABOUT.TITLE' | translate }}</h1>
+          <h2 class="title-main-heading mb-4">{{ 'ABOUT.TITLE' | translate }}</h2>
         </div>
       </div>
     </div>
@@ -24,7 +24,7 @@
                       d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z">
                     </path>
                   </svg>
-                  <span class="ms-1 d-none d-sm-inline-block">about me</span>
+                  <span class="ms-1 d-none d-sm-inline-block">{{ 'ABOUT.TITLE' | translate }}</span>
                 </button>
                 <ng-template ngbNavContent>
                   <div ngbnavpane="" class="tab-pane fade show" id="ngb-nav-0-panel" role="tabpanel"
@@ -34,31 +34,25 @@
                       <div class="row align-items-center justify-content-between">
                         <div class="col-lg-6 col-sm-12 col-md-6">
                           <div class="about-tab-content">
-                            <h4 class="title mt-4">FullStack Developer</h4>
+                            <h4 class="title mt-4">Web Developer</h4>
                             <p class="para-desc text-muted mx-auto mb-0 mt-3">
-                              Ciao, sono Serjio uno Sviluppatore FullStack con 4+ anni di esperienza in sviluppo web e
-                              gestione di sistemi IT. Specializzato in framework Symfony, Angular con competenze nella
-                              configurazione di server Linux, gestione di database relazionali e sviluppo di
-                              applicazioni AR/VR. Appassionato di innovazione tecnologica, problem solving.
+                             {{ 'ABOUT.TEXT' | translate }}
                             </p>
                             <ul class="about-data has_text_move_anim ps-0 mt-5">
                               <li>
-                                Nome <span>:</span><strong>Serjio</strong>
-                              </li>
-                              <li>
-                                Nazionalità <span>:</span><strong>Italiano</strong>
+                                {{ 'ABOUT.NATIONALITY_LABEL' | translate }} <span>:</span><strong>{{ 'ABOUT.NATIONALITY_VALUE' | translate }}</strong>
                               </li>
                               <li>
                                 Email <span>:</span><strong>{{ email }}</strong>
                               </li>
                               <li>
-                                Esperienza <span>:</span><strong>4+ anni</strong>
+                                {{ 'ABOUT.EXPERIENCE_LABEL' | translate }} <span>:</span><strong>{{ 'ABOUT.EXPERIENCE_VALUE' | translate }}</strong>
                               </li>
                               <li>
-                                Freelance <span>:</span><strong>Disponibile</strong>
+                                Freelance <span>:</span><strong>{{ 'ABOUT.FREELANCE_VALUE' | translate }}</strong>
                               </li>
                               <li>
-                                Lingue <span>:</span><strong>Italiano, Inglese, Portoghese</strong>
+                                {{ 'ABOUT.LANGUAGES_LABEL' | translate }} <span>:</span><strong>{{ 'ABOUT.LANGUAGES_VALUE' | translate }}</strong>
                               </li>
                             </ul>
                           </div>
@@ -66,7 +60,8 @@
                         <div class="col-lg-5 col-sm-12 col-md-6">
                           <div class="developer-about__img">
                             <div class="about-image">
-                              <img src="assets/images/pc.svg" alt="About Me" class="about-me img-fluid skill-logo float-right" />
+                              <img src="assets/images/pc.svg" alt="About Me"
+                                class="about-me img-fluid skill-logo float-right" />
                             </div>
                           </div>
                         </div>
@@ -84,7 +79,7 @@
                     <circle cx="12" cy="12" r="10"></circle>
                     <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
                   </svg>
-                  <span class="ms-1 d-none d-sm-inline-block">experience</span>
+                  <span class="ms-1 d-none d-sm-inline-block">{{ 'ABOUT.EXPERIENCE' | translate }}</span>
                 </button>
                 <ng-template ngbNavContent>
                   <div ngbnavpane="" class="tab-pane fade show" id="ngb-nav-1-panel" role="tabpanel"
@@ -102,18 +97,10 @@
                               <h4 class="title">Web Developer & Webmaster</h4>
                               <h6 class="expe-company">Tourmake Srl</h6>
                               <ul>
-                                <li>
-                                  <strong>Web development:</strong> Realizzazione e manutenzione di siti web custom in Symfony (PHP), HTML5, CSS3, JavaScript e TypeScript. Gestione completa di piattaforme multi-tecnologia, con focus su performance, compatibilità e scalabilità.
-                                </li>
-                                <li>
-                                  <strong>Angular Developer - Progetti avanzati:</strong> Studio e sviluppo di applicazioni in Angular, finalizzato a portare innovazione tecnologica e best practice in ambienti di produzione. Completamento e rilascio di progetti preesistenti in TypeScript, con ottimizzazione del codice e deployment in produzione.
-                                </li>
-                                <li>
-                                  <strong>Gestione e implementazione siti WordPress e PrestaShop:</strong> Installazione e configurazione di nuovi siti, gestione domini (DNS), configurazione servizi email e certificati SSL. Supporto tecnico avanzato al team grafico per la gestione di bug e problematiche generali sui siti web, inclusi quelli sviluppati con Elementor.
-                                </li>
-                                <li>
-                                  <strong>Ottimizzazione SEO, monitoraggio e sicurezza dati:</strong> Implementazione di Google Analytics 4, configurazione avanzata di Google Tag Manager, integrazione di reCAPTCHA per la protezione dei form e ottimizzazione SEO tecnica per migliorare la visibilità organica e la sicurezza dei siti.
-                                </li>
+                                <li [innerHTML]="'EXPERIENCE.JOB1_TASK1' | translate"></li>
+                                <li [innerHTML]="'EXPERIENCE.JOB1_TASK2' | translate"></li>
+                                <li [innerHTML]="'EXPERIENCE.JOB1_TASK3' | translate"></li>
+                                <li [innerHTML]="'EXPERIENCE.JOB1_TASK4' | translate"></li>
                               </ul>
                             </div>
                           </div>
@@ -128,15 +115,9 @@
                               <h4 class="title">Software Developer</h4>
                               <h6 class="expe-company">Tourmake Srl</h6>
                               <ul>
-                                <li>
-                                  <strong>Sviluppo di template custom avanzati:</strong> Creazione di template dinamici e completamente responsive utilizzando HTML, SCSS e JavaScript, progettati per integrarsi perfettamente nel software aziendale e garantire un'esperienza utente fluida su tutte le piattaforme.
-                                </li>
-                                <li>
-                                  <strong>Gestione di ticket tecnici complessi:</strong> Supporto diretto ai clienti su problematiche tecniche di livello avanzato, comprese richieste relative a funzionalità di realtà virtuale e ottimizzazione delle prestazioni della piattaforma.
-                                </li>
-                                <li>
-                                  <strong>Collaborazione interfunzionale:</strong> Cooperazione continua con il team di sviluppo per l'implementazione di miglioramenti, debug e potenziamento delle funzionalità core dei progetti in corso.
-                                </li>
+                                <li [innerHTML]="'EXPERIENCE.JOB2_TASK1' | translate"></li>
+                                <li [innerHTML]="'EXPERIENCE.JOB2_TASK2' | translate"></li>
+                                <li [innerHTML]="'EXPERIENCE.JOB2_TASK3' | translate"></li>
                               </ul>
                             </div>
                           </div>
@@ -151,22 +132,10 @@
                               <h4 class="title">Full Stack Developer Junior</h4>
                               <h6 class="expe-company">Tourmake Srl</h6>
                               <ul>
-                                <li>
-                                  <strong>Progetti AR/VR – Unity & Oculus App Lab:</strong>
-                                  Sviluppo di applicazioni immersive in Unity con C#, tra cui un’app VR interamente realizzata per dispositivi Meta Quest e pubblicata su App Lab. Gestione completa del ciclo di sviluppo: modellazione 3D, logiche interattive, ottimizzazione e distribuzione. Esperienze progettate per massimizzare l’engagement e la qualità immersiva.
-                                </li>
-                                <li>
-                                  <strong>Progetto SEO-oriented:</strong>
-                                  Sviluppo di un CMS custom in Symfony per blog SEO, con import Database di un vecchio sito WordPress. Gestione articoli, categorie, tag e metadati. Creazione template grafico responsive e ottimizzato per mobile. Focus su SEO avanzata, URL semantici e facilità di gestione dei contenuti.
-                                </li>
-                                <li>
-                                  <strong>Database Management:</strong>
-                                  Migrazione, esportazione e integrazione di database complessi per garantire efficienza, sicurezza, integrità dati e stabilità delle piattaforme digitali.
-                                </li>
-                                <li>
-                                  <strong>Progettazione 3D e Integrazione Fisico-Digitale:</strong>
-                                  Creazione di modelli tridimensionali in Blender, destinati sia alla stampa 3D fisica sia alla visualizzazione in Realtà Aumentata (WebAR).
-                                </li>
+                                <li [innerHTML]="'EXPERIENCE.JOB3_TASK1' | translate"></li>
+                                <li [innerHTML]="'EXPERIENCE.JOB3_TASK2' | translate"></li>
+                                <li [innerHTML]="'EXPERIENCE.JOB3_TASK3' | translate"></li>
+                                <li [innerHTML]="'EXPERIENCE.JOB3_TASK4' | translate"></li>
                               </ul>
                             </div>
                           </div>
@@ -190,20 +159,19 @@
                     <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
                     <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
                   </svg>
-                  <span class="ms-1 d-none d-sm-inline-block">skills</span>
+                  <span class="ms-1 d-none d-sm-inline-block">{{ 'ABOUT.SKILLS' | translate }}</span>
                 </button>
                 <ng-template ngbNavContent>
                   <div ngbnavpane="" class="tab-pane fade show" id="ngb-nav-3-panel" role="tabpanel"
                     aria-labelledby="ngb-nav-3">
-                    <!-- ... existing code ... -->
-                    <!-- ... existing code ... -->
-                    <!-- ... existing code ... -->
-                    <div id="pills-skills" role="tabpanel" aria-labelledby="pills-contact-skills" tabindex="0" class="tab-pane fade show">
+                    <div id="pills-skills" role="tabpanel" aria-labelledby="pills-contact-skills" tabindex="0"
+                      class="tab-pane fade show">
                       <div class="row g-4">
                         <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-5">
                             <div class="skill-img">
-                              <img src="assets/images/Logo/angular-icon-seeklogo.png" alt="Angular Icon" class="img-fluid skill-logo" />
+                              <img src="assets/images/Logo/angular-icon-seeklogo.png" alt="Angular Icon"
+                                class="img-fluid skill-logo" />
                             </div>
                             <h4 class="skill-percentage">79%</h4>
                             <p class="skill-pare mx-auto mb-0">Angular</p>
@@ -213,7 +181,8 @@
                         <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-5">
                             <div class="skill-img">
-                              <img src="assets/images/Logo/HTML5_logo_and_wordmark.png" alt="HTML Icon" class="img-fluid skill-logo" />
+                              <img src="assets/images/Logo/HTML5_logo_and_wordmark.png" alt="HTML Icon"
+                                class="img-fluid skill-logo" />
                             </div>
                             <h4 class="skill-percentage">96%</h4>
                             <p class="skill-pare mx-auto mb-0">HTML & CSS</p>
@@ -223,7 +192,8 @@
                         <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-5">
                             <div class="skill-img">
-                              <img src="assets/images/Logo/icons8-symfony.svg" alt="Symfony Icon" class="img-fluid skill-logo" />
+                              <img src="assets/images/Logo/icons8-symfony.svg" alt="Symfony Icon"
+                                class="img-fluid skill-logo" />
                             </div>
                             <h4 class="skill-percentage">95%</h4>
                             <p class="skill-pare mx-auto mb-0">Symfony</p>
@@ -233,7 +203,8 @@
                         <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-5">
                             <div class="skill-img">
-                              <img src="assets/images/Logo/icons8-unity.svg" alt="Unity Icon" class="img-fluid skill-logo" />
+                              <img src="assets/images/Logo/icons8-unity.svg" alt="Unity Icon"
+                                class="img-fluid skill-logo" />
                             </div>
                             <h4 class="skill-percentage">86%</h4>
                             <p class="skill-pare mx-auto mb-0">Unity</p>
@@ -243,7 +214,8 @@
                         <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-5">
                             <div class="skill-img">
-                              <img src="assets/images/Logo/javascript-logo.svg" alt="JavaScript Icon" class="img-fluid skill-logo" />
+                              <img src="assets/images/Logo/javascript-logo.svg" alt="JavaScript Icon"
+                                class="img-fluid skill-logo" />
                             </div>
                             <h4 class="skill-percentage">85%</h4>
                             <p class="skill-pare mx-auto mb-0">JavaScript</p>
@@ -253,7 +225,8 @@
                         <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-5">
                             <div class="skill-img">
-                              <img src="assets/images/Logo/mysql-logo.svg" alt="MySQL Icon" class="img-fluid skill-logo" />
+                              <img src="assets/images/Logo/mysql-logo.svg" alt="MySQL Icon"
+                                class="img-fluid skill-logo" />
                             </div>
                             <h4 class="skill-percentage">79%</h4>
                             <p class="skill-pare mx-auto mb-0">MySQL</p>
@@ -263,7 +236,8 @@
                         <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-5">
                             <div class="skill-img">
-                              <img src="assets/images/Logo/prestashop-logo.svg" alt="PrestaShop Icon" class="img-fluid skill-logo" />
+                              <img src="assets/images/Logo/prestashop-logo.svg" alt="PrestaShop Icon"
+                                class="img-fluid skill-logo" />
                             </div>
                             <h4 class="skill-percentage">85%</h4>
                             <p class="skill-pare mx-auto mb-0">PrestaShop</p>
@@ -273,37 +247,41 @@
                         <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-5">
                             <div class="skill-img">
-                              <img src="assets/images/Logo/git-icon-logo.svg" alt="Git Icon" class="img-fluid skill-logo" />
+                              <img src="assets/images/Logo/git-icon-logo.svg" alt="Git Icon"
+                                class="img-fluid skill-logo" />
                             </div>
                             <h4 class="skill-percentage">87%</h4>
                             <p class="skill-pare mx-auto mb-0">Git</p>
                           </div>
                         </div>
 
-                          <div class="col-lg-3 col-md-4">
+                        <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-5">
-                            <div class="skill-img svg-sm" >
-                              <img src="assets/images/Logo/ovhcloud-logo-vector.svg" alt="OVH Icon" class="img-fluid skill-logo"  />
+                            <div class="skill-img svg-sm">
+                              <img src="assets/images/Logo/ovhcloud-logo-vector.svg" alt="OVH Icon"
+                                class="img-fluid skill-logo" />
                             </div>
                             <h4 class="skill-percentage">70%</h4>
                             <p class="skill-pare mx-auto mb-0">OVH</p>
                           </div>
                         </div>
 
-                          <div class="col-lg-3 col-md-4">
+                        <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-5">
-                            <div class="skill-img svg-sm" >
-                              <img src="assets/images/Logo/api (1).svg" alt="RESTful API Icon" class="img-fluid skill-logo"  />
+                            <div class="skill-img svg-sm">
+                              <img src="assets/images/Logo/api (1).svg" alt="RESTful API Icon"
+                                class="img-fluid skill-logo" />
                             </div>
                             <h4 class="skill-percentage">75%</h4>
                             <p class="skill-pare mx-auto mb-0">RESTful API</p>
                           </div>
                         </div>
 
-                            <div class="col-lg-3 col-md-4">
+                        <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-5">
                             <div class="skill-img svg-sm">
-                              <img src="assets/images/Logo/nodejsStackedLight.svg" alt="Node.js Icon" class="img-fluid skill-logo"  />
+                              <img src="assets/images/Logo/nodejsStackedLight.svg" alt="Node.js Icon"
+                                class="img-fluid skill-logo" />
                             </div>
                             <h4 class="skill-percentage">75%</h4>
                             <p class="skill-pare mx-auto mb-0">Node.js</p>

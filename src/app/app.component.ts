@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
@@ -8,6 +8,11 @@ import { ContactComponent } from './contact/contact.component';
 import { ResumeComponent } from './resume/resume.component';
 import { CookieService } from 'ngx-cookie-service';
 import { CookieManagerService } from '../services/cookie-manager.service';
+import {
+    TranslateService,
+    TranslatePipe,
+    TranslateDirective
+} from "@ngx-translate/core";
 
 declare const window: any;
 declare const TweenMax: any;
@@ -21,6 +26,7 @@ declare const TweenMax: any;
     FooterComponent,
     ContactComponent,
     ResumeComponent,
+    TranslatePipe, TranslateDirective
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
@@ -32,30 +38,22 @@ export class AppComponent {
     //}
   }
 
-  constructor(private CookieManagerService: CookieManagerService) { }
+       private translate = inject(TranslateService);
+
+  constructor(private CookieManagerService: CookieManagerService) {
+
+     this.translate.addLangs(['it', 'en']);
+        this.translate.setFallbackLang('it');
+        this.translate.use('it');
+   }
+ 
+
+   
 
   ngAfterViewInit(): void {
-    window.cookieconsent.initialise({
-      palette: {
-        popup: { background: '#000' },
-        button: { background: '#f1d600' },
-      },
-      theme: 'classic',
-      position: 'bottom-right',
-      content: {
-        message:
-          'Utilizziamo i cookie per migliorare l\'esperienza utente e analizzare il traffico anonimo del sito solo per scopi analitici e per migliorare la qualità dei contenuti che forniamo. Non raccogliamo dati personali sensibili, né profiliamo i nostri utenti. Cliccando su "Accetta tutti", acconsenti all\'utilizzo di tutti i cookie in conformità con la nostra Informativa sulla Privacy.',
-        dismiss: 'Accetta tutti',
-        allow: 'Personalizza',
-      },
-      onStatusChange: (status: string) => {
-        if (status === 'allow') {
-          this.CookieManagerService.acceptAllCookies();
-        } else if (status === 'dismiss') {
-          this.CookieManagerService.rejectAllCookies();
-        }
-      },
-    });
+   this.translate.onLangChange.subscribe(() => {
+    this.CookieManagerService.initCookieBanner();
+  });
     const $bigBall = document.querySelector('.cursor__ball--big');
     const $smallBall = document.querySelector('.cursor__ball--small');
     const $hoverables = document.querySelectorAll('.hoverable');
@@ -91,4 +89,5 @@ export class AppComponent {
       });
     }
   }
+
 }

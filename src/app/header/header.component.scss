@@ -115,3 +115,59 @@
 body {
   padding-top: 80px; /* Offset content for fixed navbar */
 }
+
+.lang-toggle {
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 5px 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  font-size: 14px;
+
+  &:hover {
+    background: #222;
+    color: #fff;
+    border-color: #222;
+  }
+}
+
+.lang-dropdown {
+  position: relative;
+  width: 40px;
+  cursor: pointer;
+}
+
+.selected-flag {
+  width: 30px;
+  height: 20px;
+  border-radius: 3px;
+  display: block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: none;
+  border: none;
+  margin-top: 5px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 100;
+}
+
+.dropdown-menu li img {
+  width: 30px;
+  height: 20px;
+  border-radius: 3px;
+}
+
+.lang-dropdown.open .dropdown-menu {
+  display: flex;
+}
+
+
