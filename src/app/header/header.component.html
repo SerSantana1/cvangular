@@ -6,33 +6,56 @@
         <span class="logo-light-mode">
           <img src="assets/images/Logo-white.png" alt="" class="l-light">
         </span>
-      }@else{
+        }@else{
         <img src="assets/images/Logo.png" alt="" class="logo-dark-mode">
-      }
+        }
       </a>
-           @if (isAtTop) {
-     <nav class="navbar navbar-expand-lg navbar-dark">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </nav>
-    }@else {
+      @if (isAtTop) {
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+      }@else {
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-    }
+      }
 
       <div id="navbarSupportedContent" class="collapse navbar-collapse" [class.nav-sticky]="!isAtTop">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item active"><a href="#home" class="nav-link" [class.nav-link-black]="!isAtTop">Home</a></li>
-          <li class="nav-item"><a href="#about" class="nav-link" [class.nav-link-black]="!isAtTop">About Me</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link" [class.nav-link-black]="!isAtTop">Contattami</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link" [class.nav-link-black]="!isAtTop">{{ 'MENU.ABOUT' |
+              translate }}</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link" [class.nav-link-black]="!isAtTop">{{ 'MENU.CONTACT' |
+              translate }}</a></li>
         </ul>
       </div>
+
+ <div class="lang-dropdown" (click)="toggleDropdown()" [class.open]="dropdownOpen">
+  <!-- Selected flag -->
+  <img [src]="currentFlag" [alt]="currentLang" class="selected-flag" />
+
+  <!-- Dropdown with only the other language -->
+  @if (!dropdownOpen) {
+    <ul class="dropdown-menu">
+      @for (lang of languages; track lang.code) {
+        @if (lang.code !== currentLang) {
+          <li (click)="switchLanguage(lang.code)">
+            <img [src]="lang.flag" [alt]="lang.label" />
+          </li>
+        }
+      }
+    </ul>
+  }
+</div>
+
+
+
     </div>
   </nav>
 </header>

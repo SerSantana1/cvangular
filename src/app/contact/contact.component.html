@@ -3,8 +3,8 @@
     <div class="row justify-content-center">
       <div class="col-xxl-12 text-center">
         <div class="title-section">
-          <h1 class="title-sub-heading mb-2">contatti</h1>
-          <h2 class="title-main-heading mb-4">Contattami</h2>
+          <h1 class="title-sub-heading mb-2">{{ 'CONTACT.TITLE' | translate }}</h1>
+          <h2 class="title-main-heading mb-4">{{ 'CONTACT.TITLE' | translate }}</h2>
         </div>
       </div>
 
@@ -21,10 +21,10 @@
                   @if (emailInput.invalid && (emailInput.dirty || emailInput.touched)) {
                   <div class="text-danger">
                     @if (emailInput.errors?.['required']) {
-                    <small>Email è obbligatoria</small>
+                    <small>{{ 'CONTACT.EMAIL_REQUIRED' | translate }}</small>
                     }
                     @if (emailInput.errors?.['email']) {
-                    <small>Inserisci un indirizzo email valido</small>
+                    <small>{{ 'CONTACT.EMAIL_INVALID' | translate }}</small>
                     }
                   </div>
                   }
@@ -32,19 +32,19 @@
               </div>
               <div class="col-lg-6">
                 <div class="mb-3">
-                  <label class="form-label">Ragione Sociale</label>
-                  <input type="text" name="ragione" placeholder="Ragione Sociale" class="form-control rounded"/>
+                  <label class="form-label">{{ 'CONTACT.RAGIONE' | translate }}</label>
+                  <input type="text" name="ragione" placeholder="{{ 'CONTACT.RAGIONE' | translate }}" class="form-control rounded"/>
                 </div>
               </div>
               <div class="col-lg-12">
                 <div>
-                  <label class="form-label">Message</label>
-                  <textarea name="message" placeholder="Messaggio" rows="5" class="form-control rounded"
+                  <label class="form-label">{{ 'CONTACT.MESSAGE' | translate }}</label>
+                  <textarea name="message" placeholder="{{ 'CONTACT.MESSAGE' | translate }}" rows="5" class="form-control rounded"
                     [(ngModel)]="formData.messaggio" required #messageInput="ngModel"></textarea>
                   @if (messageInput.invalid && (messageInput.dirty || messageInput.touched)) {
                   <div class="text-danger">
                     @if (messageInput.errors?.['required']) {
-                    <small>Il messaggio è obbligatorio</small>
+                    <small>{{ 'CONTACT.MESSAGE_REQUIRED' | translate }}</small>
                     }
                   </div>
                   }
@@ -60,7 +60,7 @@
                 }
                 <div class="text-center text-md-start">
                   <button type="submit" class="btn btn-primary rounded-pill mt-5" [disabled]="contactForm.invalid">
-                    Invia messaggio
+                   {{ 'CONTACT.BUTTON' | translate }}
                   </button>
                 </div>
               </div>

@@ -1,13 +1,14 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, inject, ViewChild } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { environment } from '../../environments/environment.development';
 import emailjs from '@emailjs/browser';
 import { ScrollAnimationDirective } from '../scroll-animation.directive';
+import {TranslatePipe, TranslateDirective, TranslateService} from "@ngx-translate/core";
 
 
 @Component({
   selector: 'app-contact',
-  imports: [FormsModule, ScrollAnimationDirective],
+  imports: [FormsModule, ScrollAnimationDirective,TranslatePipe, TranslateDirective],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -17,6 +18,12 @@ export class ContactComponent {
     email: '',
     ragione: '',
     messaggio: '',
+  }
+
+    private translate = inject(TranslateService);
+
+  switchLanguage(lang: string) {
+    this.translate.use(lang);
   }
 
 
@@ -41,7 +48,7 @@ export class ContactComponent {
       );
 
       this.messageType = 'success';
-      this.messageText = 'Messaggio inviato con successo!';
+      this.messageText = this.translate.instant('CONTACT.SUCCESS');
       this.showMessage = true;
 
       this.contactForm.reset();
@@ -49,7 +56,7 @@ export class ContactComponent {
       setTimeout(() => this.showMessage = false, 5000);
     } catch (error) {
       this.messageType = 'error';
-      this.messageText = 'Si è verificato un errore durante l\'invio del messaggio';
+      this.messageText = this.translate.instant('CONTACT.ERROR');;
       this.showMessage = true;
     }
   }
