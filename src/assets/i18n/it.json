@@ -7,8 +7,9 @@
   "HERO": {
     "TITLE": "Ciao, sono",
     "SUB_DESCRIPTION": "Sviluppatore FullStack con oltre 4 anni di esperienza nello sviluppo web e nella gestione di sistemi IT.",   
-    "DESCRIPTION": "Specializzato nello sviluppo di applicazioni moderne con Angular, Symfony e tecnologie open-source. Mi distingue un approccio orientato alla qualità del codice, performance e scalabilità, con costante voglia di apprendere. Alla costante ricerca di opportunità per crescere, contribuire a progetti solidi e lavorare in team con passione e affidabilità.",
-    "BUTTON": "Visualizza il mio CV"
+    "DESCRIPTION": "Sviluppatore Web con oltre 4 anni di esperienza nello sviluppo front-end e full-stack. Competente in React e Angular, con capacità di integrazione con API REST e gestione di database relazionali. Esperienza nella configurazione di server Linux e nella realizzazione di applicazioni scalabili e performanti.",
+    "BUTTON": "Visualizza il mio CV",
+    "BUTTON-LINK": "/assets/file/CV-ita.pdf"
   },
   "ABOUT": {
     "TITLE": "Chi sono",
