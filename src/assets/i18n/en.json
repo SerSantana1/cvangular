@@ -7,8 +7,9 @@
   "HERO": {
     "TITLE": "Hi, I’m",
     "SUB_DESCRIPTION": "FullStack Developer with over 4 years of experience in web development and IT systems management.",   
-    "DESCRIPTION": "Specialized in building modern applications with Angular, Symfony, and open-source technologies. I bring a quality-driven approach to code, focusing on performance, scalability, and continuous learning. I am always looking for opportunities to grow, contribute to impactful projects, and collaborate with teams with passion and reliability.",
-    "BUTTON": "View My Resume"
+    "DESCRIPTION": "Web developer with over 4 years of experience in front-end and full-stack development. Proficient in React and Angular, with skills in REST API integration and relational database management. Experience in configuring Linux servers and building scalable, high-performance applications.",
+    "BUTTON": "View My Resume",
+    "BUTTON-LINK": "/assets/file/CV-en.pdf"
   },
   "ABOUT": {
     "TITLE": "About Me",

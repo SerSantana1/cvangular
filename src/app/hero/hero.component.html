@@ -1,37 +1,36 @@
 <section id="home" class="bg-half-150 d-table w-100">
-  <div class="container scroll-reveal" [class.animate-in]="animate">
-      <div class="row align-items-center justify-content-center">
-          <div class="col-lg-6 col-md-6">
-              <div class="title-heading text-center text-md-start">
-                  <h1 class="typed_title mb-0 fw-normal">{{ 'HERO.TITLE' | translate }}
-                      <span id="typed_list">
-                          <span>Serjio </span>
-                          <span>Sant'Ana</span>
-                      </span>
-                      <span id="typed"></span>
-                  </h1>
-                  <h4 class="typed-heading mt-4">{{ 'HERO.SUB_DESCRIPTION' | translate }}</h4>
-                  <p class="para-desc mx-auto mb-0 mt-3" style="--bs-text-opacity: .8;">
-{{ 'HERO.DESCRIPTION' | translate }}</p>
- <a href="/assets/file/CV.pdf"
-   class="btn btn-primary rounded-pill mt-5  d-inline-flex align-items-center gap-2"
-   target="_blank"
-   rel="noopener noreferrer">
-   {{ 'HERO.BUTTON' | translate }}
-   <i class="fas fa-external-link-alt"></i>
-</a>
+    <div class="container scroll-reveal" [class.animate-in]="animate">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6 col-md-6">
+                <div class="title-heading text-center text-md-start">
+                    <h1 class="typed_title mb-0 fw-normal">{{ 'HERO.TITLE' | translate }}
+                        <span id="typed_list">
+                            <span>Serjio </span>
+                            <span>Sant'Ana</span>
+                        </span>
+                        <span id="typed"></span>
+                    </h1>
+                    <h4 class="typed-heading mt-4">{{ 'HERO.SUB_DESCRIPTION' | translate }}</h4>
+                    <p class="para-desc mx-auto mb-0 mt-3" style="--bs-text-opacity: .8;">
+                        {{ 'HERO.DESCRIPTION' | translate }}</p>
+                    <a href="{{ 'HERO.BUTTON-LINK' | translate }}"
+                        class="btn btn-primary rounded-pill mt-5  d-inline-flex align-items-center gap-2"
+                        target="_blank" rel="noopener noreferrer">
+                        {{ 'HERO.BUTTON' | translate }}
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
 
-              </div>
-          </div>
-          <div class="col-lg-6 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
-              <div class="position-relative person-image">
-                  <div class="slider__shape">
-                          <div class="slider-shape-1"></div>
-                  </div>
-                  <!-- You can add additional content like images, animations, etc. inside here -->
-              </div>
-              <img src="assets/images/programming.svg" class="img-fluid mx-auto d-block">
-          </div>
-      </div>
-  </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                <div class="position-relative person-image">
+                    <div class="slider__shape">
+                        <div class="slider-shape-1"></div>
+                    </div>
+                    <!-- You can add additional content like images, animations, etc. inside here -->
+                </div>
+                <img src="assets/images/programming.svg" class="img-fluid mx-auto d-block">
+            </div>
+        </div>
+    </div>
 </section>
