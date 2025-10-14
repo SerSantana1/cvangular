@@ -3,6 +3,18 @@
 @import 'cookieconsent/build/cookieconsent.min.css';
 
 
+* {
+  font-family: 'Sora', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+  cursor: none;
+  scroll-behavior: smooth;
+}
+
+
 .title-section {
   .title-sub-heading {
     color: #ebb884;
