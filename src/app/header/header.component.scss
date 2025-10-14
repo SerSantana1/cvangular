@@ -3,6 +3,7 @@
   background: transparent; /* Default transparent */
   transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for background & shadow */
   padding: 1rem 0;
+  z-index: 1;
 
   &.nav-sticky {
     background-color: #fff; /* Change background color on scroll */
