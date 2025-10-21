@@ -20,47 +20,24 @@
             <ul ngbNav #nav="ngbNav" class="nav about-tab-pills mb-5">
               <li [ngbNavItem]="'about'" class="nav-item custom-nav-item">
                 <button ngbNavLink class="nav-link">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-inbox d-inline-block"
-                  >
-                    <polyline
-                      points="22 12 16 12 14 15 10 15 8 12 2 12"
-                    ></polyline>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-inbox d-inline-block">
+                    <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
                     <path
-                      d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
-                    ></path>
+                      d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z">
+                    </path>
                   </svg>
                   <span class="ms-1 d-none d-sm-inline-block">{{
                     "ABOUT.TITLE" | translate
-                  }}</span>
+                    }}</span>
                 </button>
                 <ng-template ngbNavContent>
-                  <div
-                    ngbnavpane=""
-                    class="tab-pane fade show"
-                    id="ngb-nav-0-panel"
-                    role="tabpanel"
-                    aria-labelledby="ngb-nav-0"
-                  >
-                    <div
-                      id="pills-about"
-                      role="tabpanel"
-                      aria-labelledby="pills-home-tab"
-                      tabindex="0"
-                      class="tab-pane fade show"
-                    >
-                      <div
-                        class="row align-items-center justify-content-between"
-                      >
+                  <div ngbnavpane="" class="tab-pane fade show" id="ngb-nav-0-panel" role="tabpanel"
+                    aria-labelledby="ngb-nav-0">
+                    <div id="pills-about" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0"
+                      class="tab-pane fade show">
+                      <div class="row align-items-center justify-content-between">
                         <div class="col-lg-6 col-sm-12 col-md-6">
                           <div class="about-tab-content">
                             <h4 class="title mt-4">Web Developer</h4>
@@ -70,33 +47,29 @@
                             <ul class="about-data has_text_move_anim ps-0 mt-5">
                               <li>
                                 {{ "ABOUT.NATIONALITY_LABEL" | translate }}
-                                <span>:</span
-                                ><strong>{{
+                                <span>:</span><strong>{{
                                   "ABOUT.NATIONALITY_VALUE" | translate
-                                }}</strong>
+                                  }}</strong>
                               </li>
                               <li>
                                 Email <span>:</span><strong>{{ email }}</strong>
                               </li>
                               <li>
                                 {{ "ABOUT.EXPERIENCE_LABEL" | translate }}
-                                <span>:</span
-                                ><strong>{{
+                                <span>:</span><strong>{{
                                   "ABOUT.EXPERIENCE_VALUE" | translate
-                                }}</strong>
+                                  }}</strong>
                               </li>
                               <li>
-                                Freelance <span>:</span
-                                ><strong>{{
+                                Freelance <span>:</span><strong>{{
                                   "ABOUT.FREELANCE_VALUE" | translate
-                                }}</strong>
+                                  }}</strong>
                               </li>
                               <li>
                                 {{ "ABOUT.LANGUAGES_LABEL" | translate }}
-                                <span>:</span
-                                ><strong>{{
+                                <span>:</span><strong>{{
                                   "ABOUT.LANGUAGES_VALUE" | translate
-                                }}</strong>
+                                  }}</strong>
                               </li>
                             </ul>
                           </div>
@@ -104,11 +77,8 @@
                         <div class="col-lg-5 col-sm-12 col-md-6">
                           <div class="developer-about__img">
                             <div class="about-image">
-                              <img
-                                src="assets/images/pc.svg"
-                                alt="About Me"
-                                class="about-me img-fluid skill-logo float-right"
-                              />
+                              <img src="assets/images/pc.svg" alt="About Me"
+                                class="about-me img-fluid skill-logo float-right" />
                             </div>
                           </div>
                         </div>
@@ -120,42 +90,21 @@
               </li>
               <li [ngbNavItem]="'experience'" class="nav-item custom-nav-item">
                 <button ngbNavLink class="nav-link">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-compass d-inline-block"
-                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-compass d-inline-block">
                     <circle cx="12" cy="12" r="10"></circle>
-                    <polygon
-                      points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"
-                    ></polygon>
+                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
                   </svg>
                   <span class="ms-1 d-none d-sm-inline-block">{{
                     "ABOUT.EXPERIENCE" | translate
-                  }}</span>
+                    }}</span>
                 </button>
                 <ng-template ngbNavContent>
-                  <div
-                    ngbnavpane=""
-                    class="tab-pane fade show"
-                    id="ngb-nav-1-panel"
-                    role="tabpanel"
-                    aria-labelledby="ngb-nav-1"
-                  >
-                    <div
-                      id="pills-experience"
-                      role="tabpanel"
-                      aria-labelledby="pills-profile-experience"
-                      tabindex="0"
-                      class="tab-pane fade show"
-                    >
+                  <div ngbnavpane="" class="tab-pane fade show" id="ngb-nav-1-panel" role="tabpanel"
+                    aria-labelledby="ngb-nav-1">
+                    <div id="pills-experience" role="tabpanel" aria-labelledby="pills-profile-experience" tabindex="0"
+                      class="tab-pane fade show">
                       <div class="container-lg">
                         <div class="col-12 col-lg-8 mb-5 mx-auto">
                           <div class="experience-area">
@@ -167,26 +116,18 @@
                               <h4 class="title">Web Developer & Webmaster</h4>
                               <h6 class="expe-company">Tourmake Srl</h6>
                               <ul>
-                                <li
-                                  [innerHTML]="
+                                <li [innerHTML]="
                                     'EXPERIENCE.JOB1_TASK1' | translate
-                                  "
-                                ></li>
-                                <li
-                                  [innerHTML]="
+                                  "></li>
+                                <li [innerHTML]="
                                     'EXPERIENCE.JOB1_TASK2' | translate
-                                  "
-                                ></li>
-                                <li
-                                  [innerHTML]="
+                                  "></li>
+                                <li [innerHTML]="
                                     'EXPERIENCE.JOB1_TASK3' | translate
-                                  "
-                                ></li>
-                                <li
-                                  [innerHTML]="
+                                  "></li>
+                                <li [innerHTML]="
                                     'EXPERIENCE.JOB1_TASK4' | translate
-                                  "
-                                ></li>
+                                  "></li>
                               </ul>
                             </div>
                           </div>
@@ -203,21 +144,15 @@
                               <h4 class="title">Software Developer</h4>
                               <h6 class="expe-company">Tourmake Srl</h6>
                               <ul>
-                                <li
-                                  [innerHTML]="
+                                <li [innerHTML]="
                                     'EXPERIENCE.JOB2_TASK1' | translate
-                                  "
-                                ></li>
-                                <li
-                                  [innerHTML]="
+                                  "></li>
+                                <li [innerHTML]="
                                     'EXPERIENCE.JOB2_TASK2' | translate
-                                  "
-                                ></li>
-                                <li
-                                  [innerHTML]="
+                                  "></li>
+                                <li [innerHTML]="
                                     'EXPERIENCE.JOB2_TASK3' | translate
-                                  "
-                                ></li>
+                                  "></li>
                               </ul>
                             </div>
                           </div>
@@ -234,26 +169,18 @@
                               <h4 class="title">Full Stack Developer Junior</h4>
                               <h6 class="expe-company">Tourmake Srl</h6>
                               <ul>
-                                <li
-                                  [innerHTML]="
+                                <li [innerHTML]="
                                     'EXPERIENCE.JOB3_TASK1' | translate
-                                  "
-                                ></li>
-                                <li
-                                  [innerHTML]="
+                                  "></li>
+                                <li [innerHTML]="
                                     'EXPERIENCE.JOB3_TASK2' | translate
-                                  "
-                                ></li>
-                                <li
-                                  [innerHTML]="
+                                  "></li>
+                                <li [innerHTML]="
                                     'EXPERIENCE.JOB3_TASK3' | translate
-                                  "
-                                ></li>
-                                <li
-                                  [innerHTML]="
+                                  "></li>
+                                <li [innerHTML]="
                                     'EXPERIENCE.JOB3_TASK4' | translate
-                                  "
-                                ></li>
+                                  "></li>
                               </ul>
                             </div>
                           </div>
@@ -266,55 +193,32 @@
               </li>
               <li [ngbNavItem]="'skills'" class="nav-item custom-nav-item">
                 <button ngbNavLink class="nav-link">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-rocket d-inline-block"
-                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-rocket d-inline-block">
+                    <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
+                    </path>
                     <path
-                      d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"
-                    ></path>
-                    <path
-                      d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"
-                    ></path>
+                      d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z">
+                    </path>
                     <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
                     <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
                   </svg>
                   <span class="ms-1 d-none d-sm-inline-block">{{
                     "ABOUT.SKILLS" | translate
-                  }}</span>
+                    }}</span>
                 </button>
                 <ng-template ngbNavContent>
-                  <div
-                    ngbnavpane=""
-                    class="tab-pane fade show"
-                    id="ngb-nav-3-panel"
-                    role="tabpanel"
-                    aria-labelledby="ngb-nav-3"
-                  >
-                    <div
-                      id="pills-skills"
-                      role="tabpanel"
-                      aria-labelledby="pills-contact-skills"
-                      tabindex="0"
-                      class="tab-pane fade show"
-                    >
+                  <div ngbnavpane="" class="tab-pane fade show" id="ngb-nav-3-panel" role="tabpanel"
+                    aria-labelledby="ngb-nav-3">
+                    <div id="pills-skills" role="tabpanel" aria-labelledby="pills-contact-skills" tabindex="0"
+                      class="tab-pane fade show">
                       <div class="row g-4">
                         <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-5">
                             <div class="skill-img">
-                              <img
-                                src="assets/images/Logo/angular-icon-seeklogo.png"
-                                alt="Angular Icon"
-                                class="img-fluid skill-logo"
-                              />
+                              <img src="assets/images/Logo/angular-icon-seeklogo.png" alt="Angular Icon"
+                                class="img-fluid skill-logo" />
                             </div>
                             <p class="skill-pare mx-auto mb-0">Angular</p>
                           </div>
@@ -323,11 +227,8 @@
                         <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-5">
                             <div class="skill-img svg-sm">
-                              <img
-                                src="assets/images/Logo/React-icon.svg"
-                                alt="OVH Icon"
-                                class="img-fluid skill-logo"
-                              />
+                              <img src="assets/images/Logo/React-icon.svg" alt="OVH Icon"
+                                class="img-fluid skill-logo" />
                             </div>
                             <p class="skill-pare mx-auto mb-0">React</p>
                           </div>
@@ -336,11 +237,8 @@
                         <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-5">
                             <div class="skill-img">
-                              <img
-                                src="assets/images/Logo/HTML5_logo_and_wordmark.png"
-                                alt="HTML Icon"
-                                class="img-fluid skill-logo"
-                              />
+                              <img src="assets/images/Logo/HTML5_logo_and_wordmark.png" alt="HTML Icon"
+                                class="img-fluid skill-logo" />
                             </div>
                             <p class="skill-pare mx-auto mb-0">HTML & CSS</p>
                           </div>
@@ -349,11 +247,8 @@
                         <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-5">
                             <div class="skill-img">
-                              <img
-                                src="assets/images/Logo/icons8-symfony.svg"
-                                alt="Symfony Icon"
-                                class="img-fluid skill-logo"
-                              />
+                              <img src="assets/images/Logo/icons8-symfony.svg" alt="Symfony Icon"
+                                class="img-fluid skill-logo" />
                             </div>
                             <p class="skill-pare mx-auto mb-0">Symfony</p>
                           </div>
@@ -362,11 +257,8 @@
                         <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-5">
                             <div class="skill-img">
-                              <img
-                                src="assets/images/Logo/icons8-unity.svg"
-                                alt="Unity Icon"
-                                class="img-fluid skill-logo"
-                              />
+                              <img src="assets/images/Logo/icons8-unity.svg" alt="Unity Icon"
+                                class="img-fluid skill-logo" />
                             </div>
                             <p class="skill-pare mx-auto mb-0">Unity</p>
                           </div>
@@ -375,11 +267,8 @@
                         <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-5">
                             <div class="skill-img">
-                              <img
-                                src="assets/images/Logo/javascript-logo.svg"
-                                alt="JavaScript Icon"
-                                class="img-fluid skill-logo"
-                              />
+                              <img src="assets/images/Logo/javascript-logo.svg" alt="JavaScript Icon"
+                                class="img-fluid skill-logo" />
                             </div>
                             <p class="skill-pare mx-auto mb-0">JavaScript</p>
                           </div>
@@ -388,11 +277,8 @@
                         <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-5">
                             <div class="skill-img">
-                              <img
-                                src="assets/images/Logo/mysql-logo.svg"
-                                alt="MySQL Icon"
-                                class="img-fluid skill-logo"
-                              />
+                              <img src="assets/images/Logo/mysql-logo.svg" alt="MySQL Icon"
+                                class="img-fluid skill-logo" />
                             </div>
                             <p class="skill-pare mx-auto mb-0">MySQL</p>
                           </div>
@@ -401,11 +287,8 @@
                         <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-5">
                             <div class="skill-img">
-                              <img
-                                src="assets/images/Logo/prestashop-logo.svg"
-                                alt="PrestaShop Icon"
-                                class="img-fluid skill-logo"
-                              />
+                              <img src="assets/images/Logo/prestashop-logo.svg" alt="PrestaShop Icon"
+                                class="img-fluid skill-logo" />
                             </div>
                             <p class="skill-pare mx-auto mb-0">PrestaShop</p>
                           </div>
@@ -414,11 +297,8 @@
                         <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-5">
                             <div class="skill-img">
-                              <img
-                                src="assets/images/Logo/git-icon-logo.svg"
-                                alt="Git Icon"
-                                class="img-fluid skill-logo"
-                              />
+                              <img src="assets/images/Logo/git-icon-logo.svg" alt="Git Icon"
+                                class="img-fluid skill-logo" />
                             </div>
                             <p class="skill-pare mx-auto mb-0">Git</p>
                           </div>
@@ -427,11 +307,8 @@
                         <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-5">
                             <div class="skill-img svg-sm">
-                              <img
-                                src="assets/images/Logo/api (1).svg"
-                                alt="RESTful API Icon"
-                                class="img-fluid skill-logo"
-                              />
+                              <img src="assets/images/Logo/api (1).svg" alt="RESTful API Icon"
+                                class="img-fluid skill-logo" />
                             </div>
                             <p class="skill-pare mx-auto mb-0">RESTful API</p>
                           </div>
@@ -440,11 +317,8 @@
                         <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-5">
                             <div class="skill-img svg-sm">
-                              <img
-                                src="assets/images/Logo/nodejsStackedLight.svg"
-                                alt="Node.js Icon"
-                                class="img-fluid skill-logo"
-                              />
+                              <img src="assets/images/Logo/nodejsStackedLight.svg" alt="Node.js Icon"
+                                class="img-fluid skill-logo" />
                             </div>
                             <p class="skill-pare mx-auto mb-0">Node.js</p>
                           </div>
@@ -453,11 +327,7 @@
                         <div class="col-lg-3 col-md-4">
                           <div class="skill-area mb-5">
                             <div class="skill-img">
-                              <img
-                                src="assets/images/Logo/Tux.svg"
-                                alt="Linux Icon"
-                                class="img-fluid skill-logo"
-                              />
+                              <img src="assets/images/Logo/Tux.svg" alt="Linux Icon" class="img-fluid skill-logo" />
                             </div>
                             <p class="skill-pare mx-auto mb-0">Linux</p>
                           </div>
@@ -469,48 +339,23 @@
                 </ng-template>
               </li>
               <li [ngbNavItem]="'portfolio'" class="nav-item custom-nav-item">
- <button ngbNavLink class="nav-link">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-rocket d-inline-block"
-                  >
-                    <path
-                      d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"
-                    ></path>
-                    <path
-                      d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"
-                    ></path>
-                    <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
-                    <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                <button ngbNavLink class="nav-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-briefcase d-inline-block">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                    <path d="M16 3h-8v4h8V3z" />
                   </svg>
                   <span class="ms-1 d-none d-sm-inline-block">Portfolio</span>
                 </button>
                 <ng-template ngbNavContent>
-                  <div
-                    ngbnavpane=""
-                    class="tab-pane fade show"
-                    id="ngb-nav-3-panel"
-                    role="tabpanel"
-                    aria-labelledby="ngb-nav-3"
-                  >
-                    <div
-                      id="pills-skills"
-                      role="tabpanel"
-                      aria-labelledby="pills-contact-skills"
-                      tabindex="0"
-                      class="tab-pane fade show"
-                    > <app-portfolio></app-portfolio>
+                  <div ngbnavpane="" class="tab-pane fade show" id="ngb-nav-3-panel" role="tabpanel"
+                    aria-labelledby="ngb-nav-3">
+                    <div id="pills-skills" role="tabpanel" aria-labelledby="pills-contact-skills" tabindex="0"
+                      class="tab-pane fade show"> <app-portfolio></app-portfolio>
+                    </div>
                   </div>
-                  </div>
-                </ng-template> 
+                </ng-template>
               </li>
             </ul>
             <div [ngbNavOutlet]="nav"></div>
