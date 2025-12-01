@@ -6,8 +6,8 @@
   },
   "HERO": {
     "TITLE": "Ciao, sono",
-    "SUB_DESCRIPTION": "Sviluppatore FullStack con oltre 4 anni di esperienza nello sviluppo web e nella gestione di sistemi IT.",   
-    "DESCRIPTION": "Sviluppatore Web con oltre 4 anni di esperienza nello sviluppo front-end e full-stack. Competente in React e Angular, con capacità di integrazione con API REST e gestione di database relazionali. Esperienza nella configurazione di server Linux e nella realizzazione di applicazioni scalabili e performanti.",
+    "SUB_DESCRIPTION": "Sviluppatore Front-End con oltre 4 anni di esperienza nello sviluppo web e nella gestione di sistemi IT.",
+    "DESCRIPTION": "Competente in React e Angular, con capacità di integrazione con API REST e gestione di database relazionali. Esperienza nella configurazione di server Linux e nella realizzazione di applicazioni scalabili e performanti.",
     "BUTTON": "Visualizza il mio CV",
     "BUTTON-LINK": "/assets/file/CV-ita.pdf"
   },
@@ -16,7 +16,7 @@
      "SKILLS": "Competenze",
      "EXPERIENCE": "Esperienze lavorative",
     "TEXT": "Ciao, sono Serjio uno Sviluppatore FullStack con 4+ anni di esperienza in sviluppo web e gestione di sistemi IT. Specializzato in framework Symfony, Angular con competenze nella configurazione di server Linux, gestione di database relazionali e sviluppo di applicazioni AR/VR. Appassionato di innovazione tecnologica, problem solving.",
-    
+
     "NATIONALITY_LABEL": "Nazionalità",
     "NATIONALITY_VALUE": "Italiano",
 
@@ -30,7 +30,7 @@
     "LANGUAGES_VALUE": "Italiano, Inglese, Portoghese"
   },
 
-  
+
   "EXPERIENCE": {
     "JOB1_PERIOD": "2023 - presente",
     "JOB1_TASK1": "<strong>Web development:</strong> Realizzazione e manutenzione di siti web custom in Symfony (PHP), HTML5, CSS3, JavaScript e TypeScript. Gestione completa di piattaforme multi-tecnologia, con focus su performance, compatibilità e scalabilità.",
