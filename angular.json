@@ -30,6 +30,11 @@
         "glob": "CNAME",
         "input": "src",
         "output": "."
+      },
+      {
+        "glob": "*.pdf",
+        "input": "src/files",
+        "output": "."
       }
     ],
     "styles": [
