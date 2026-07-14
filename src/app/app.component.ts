@@ -1,5 +1,5 @@
-import { Component, inject } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
+import { Component, inject, DOCUMENT } from '@angular/core';
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
