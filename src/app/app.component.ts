@@ -1,4 +1,5 @@
 import { Component, inject } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
@@ -6,13 +7,8 @@ import { HeroComponent } from './hero/hero.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { ResumeComponent } from './resume/resume.component';
-import { CookieService } from 'ngx-cookie-service';
 import { CookieManagerService } from '../services/cookie-manager.service';
-import {
-    TranslateService,
-    TranslatePipe,
-    TranslateDirective
-} from "@ngx-translate/core";
+import { TranslateService } from "@ngx-translate/core";
 
 declare const window: any;
 declare const TweenMax: any;
@@ -25,13 +21,13 @@ declare const TweenMax: any;
     HeroComponent,
     FooterComponent,
     ContactComponent,
-    ResumeComponent,
-    TranslatePipe, TranslateDirective
+    ResumeComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
+  private document = inject(DOCUMENT);
   ngOnInit() {
    // if (performance.navigation.type === 1) {
    //   window.location.href = window.location.origin;
@@ -45,13 +41,15 @@ export class AppComponent {
      this.translate.addLangs(['it', 'en']);
         this.translate.setFallbackLang('it');
         this.translate.use('it');
+        this.document.documentElement.lang = 'it';
    }
  
 
    
 
   ngAfterViewInit(): void {
-   this.translate.onLangChange.subscribe(() => {
+   this.translate.onLangChange.subscribe((event) => {
+    this.document.documentElement.lang = event.lang;
     this.CookieManagerService.initCookieBanner();
   });
     const $bigBall = document.querySelector('.cursor__ball--big');

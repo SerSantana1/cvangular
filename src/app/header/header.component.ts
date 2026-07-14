@@ -1,12 +1,11 @@
 import { Component,HostListener, inject  } from '@angular/core';
-import {TranslatePipe, TranslateDirective, TranslateService} from "@ngx-translate/core";
-import { AppComponent } from '../app.component';
+import {TranslatePipe, TranslateService} from "@ngx-translate/core";
 import { CookieManagerService } from '../../services/cookie-manager.service';
 
 
 @Component({
   selector: 'app-header',
-  imports: [TranslatePipe, TranslateDirective,AppComponent],
+  imports: [TranslatePipe],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })

@@ -3,12 +3,12 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { environment } from '../../environments/environment.development';
 import emailjs from '@emailjs/browser';
 import { ScrollAnimationDirective } from '../scroll-animation.directive';
-import {TranslatePipe, TranslateDirective, TranslateService} from "@ngx-translate/core";
+import {TranslatePipe, TranslateService} from "@ngx-translate/core";
 
 
 @Component({
   selector: 'app-contact',
-  imports: [FormsModule, ScrollAnimationDirective,TranslatePipe, TranslateDirective],
+  imports: [FormsModule, ScrollAnimationDirective,TranslatePipe],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })

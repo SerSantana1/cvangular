@@ -1,10 +1,10 @@
 import { Component, inject } from '@angular/core';
 import { environment } from '../../environments/environment';
-import {TranslatePipe, TranslateDirective, TranslateService} from "@ngx-translate/core";
+import {TranslatePipe, TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-footer',
-  imports: [TranslateDirective, TranslatePipe],
+  imports: [TranslatePipe],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
