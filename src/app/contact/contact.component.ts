@@ -1,4 +1,4 @@
-import { Component, inject, ViewChild } from '@angular/core';
+import { Component, inject, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { environment } from '../../environments/environment.development';
 import emailjs from '@emailjs/browser';
@@ -10,6 +10,7 @@ import {TranslatePipe, TranslateService} from "@ngx-translate/core";
   selector: 'app-contact',
   imports: [FormsModule, ScrollAnimationDirective,TranslatePipe],
   templateUrl: './contact.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {

@@ -1,4 +1,4 @@
-import { Component, inject, DOCUMENT } from '@angular/core';
+import { Component, inject, DOCUMENT, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterOutlet } from '@angular/router';
@@ -24,6 +24,7 @@ declare const TweenMax: any;
     ResumeComponent
   ],
   templateUrl: './app.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './app.component.scss',
 })
 export class AppComponent {

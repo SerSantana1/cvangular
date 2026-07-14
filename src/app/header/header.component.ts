@@ -1,4 +1,4 @@
-import { Component,HostListener, inject  } from '@angular/core';
+import { Component, HostListener, inject, ChangeDetectionStrategy } from '@angular/core';
 import {TranslatePipe, TranslateService} from "@ngx-translate/core";
 import { CookieManagerService } from '../../services/cookie-manager.service';
 
@@ -7,6 +7,7 @@ import { CookieManagerService } from '../../services/cookie-manager.service';
   selector: 'app-header',
   imports: [TranslatePipe],
   templateUrl: './header.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './header.component.scss'
 })
 

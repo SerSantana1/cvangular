@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -6,6 +6,7 @@ import { TranslateService } from '@ngx-translate/core';
   selector: 'app-hero',
   imports: [TranslatePipe],
   templateUrl: './hero.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent {

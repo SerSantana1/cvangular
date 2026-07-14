@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { environment } from '../../environments/environment';
 import {TranslatePipe, TranslateService} from "@ngx-translate/core";
 
@@ -6,6 +6,7 @@ import {TranslatePipe, TranslateService} from "@ngx-translate/core";
   selector: 'app-footer',
   imports: [TranslatePipe],
   templateUrl: './footer.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {

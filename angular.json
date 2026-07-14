@@ -32,6 +32,11 @@
         "output": "."
       },
       {
+        "glob": ".nojekyll",
+        "input": "src",
+        "output": "."
+      },
+      {
         "glob": "*.pdf",
         "input": "src/files",
         "output": "."
