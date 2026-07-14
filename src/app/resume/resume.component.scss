@@ -159,3 +159,19 @@
   }
 }
 
+
+.skill-stack {
+  &__label {
+    color: #ebb884;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+
+  &__value {
+    color: #6c757d;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}

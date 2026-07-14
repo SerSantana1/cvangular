@@ -6,51 +6,65 @@
   },
   "HERO": {
     "TITLE": "Ciao, sono",
-    "SUB_DESCRIPTION": "Sviluppatore Front-End con oltre 4 anni di esperienza nello sviluppo web e nella gestione di sistemi IT.",
-    "DESCRIPTION": "Competente in React e Angular, con capacità di integrazione con API REST e gestione di database relazionali. Esperienza nella configurazione di server Linux e nella realizzazione di applicazioni scalabili e performanti.",
+    "SUB_DESCRIPTION": "Software Engineer con oltre 5 anni di esperienza nella creazione e scalabilità di piattaforme web.",
+    "DESCRIPTION": "Software Engineer specializzato in piattaforme web e infrastruttura cloud. Lavoro con TypeScript, Angular, React, Symfony e Docker, con attenzione ai risultati misurabili: pipeline CI/CD che hanno ridotto i tempi di deploy da 35 a meno di 10 minuti, migrazioni cloud che hanno abbattuto i costi di hosting del 30% e ottimizzazioni che hanno ridotto del 38% il carico del database nelle ore di picco.",
     "BUTTON": "Visualizza il mio CV",
     "BUTTON-LINK": "/Serjio_Santana_CV_it.pdf"
   },
   "ABOUT": {
     "TITLE": "Chi sono",
-     "SKILLS": "Competenze",
-     "EXPERIENCE": "Esperienze lavorative",
-    "TEXT": "Ciao, sono Serjio uno Sviluppatore FullStack con 4+ anni di esperienza in sviluppo web e gestione di sistemi IT. Specializzato in framework Symfony, Angular con competenze nella configurazione di server Linux, gestione di database relazionali e sviluppo di applicazioni AR/VR. Appassionato di innovazione tecnologica, problem solving.",
+    "ROLE": "Software Engineer",
+    "SKILLS": "Competenze",
+    "EXPERIENCE": "Esperienze Lavorative",
+    "TEXT": "Ciao, sono Serjio, Software Engineer con oltre 5 anni di esperienza tra sviluppo web, infrastruttura cloud e sistemi IT. Lavoro con TypeScript, Angular, React, Symfony, Laravel e Docker; ho guidato l’adozione di CI/CD, migrazioni cloud e attività di ottimizzazione delle performance. Affianco inoltre i nuovi ingegneri e documento ciò che sviluppo.",
 
     "NATIONALITY_LABEL": "Nazionalità",
     "NATIONALITY_VALUE": "Italiano",
 
     "EXPERIENCE_LABEL": "Esperienza",
-    "EXPERIENCE_VALUE": "4+ anni",
+    "EXPERIENCE_VALUE": "5+ anni",
 
-    "FREELANCE_LABEL": "Freelance",
-    "FREELANCE_VALUE": "Disponibile",
+    "AVAILABILITY_LABEL": "Disponibilità",
+    "AVAILABILITY_VALUE": "Aperto a nuove opportunità",
 
     "LANGUAGES_LABEL": "Lingue",
     "LANGUAGES_VALUE": "Italiano, Inglese, Portoghese"
   },
 
-
   "EXPERIENCE": {
-    "JOB1_PERIOD": "2023 - presente",
-    "JOB1_TASK1": "<strong>Web development:</strong> Realizzazione e manutenzione di siti web custom in Symfony (PHP), HTML5, CSS3, JavaScript e TypeScript. Gestione completa di piattaforme multi-tecnologia, con focus su performance, compatibilità e scalabilità.",
-    "JOB1_TASK2": "<strong>Angular Developer - Progetti avanzati:</strong> Studio e sviluppo di applicazioni in Angular, finalizzato a portare innovazione tecnologica e best practice in ambienti di produzione. Completamento e rilascio di progetti preesistenti in TypeScript, con ottimizzazione del codice e deployment in produzione.",
-    "JOB1_TASK3": "<strong>Gestione e implementazione siti WordPress e PrestaShop:</strong> Installazione e configurazione di nuovi siti, gestione domini (DNS), configurazione servizi email e certificati SSL. Supporto tecnico avanzato al team grafico per la gestione di bug e problematiche generali sui siti web, inclusi quelli sviluppati con Elementor.",
-    "JOB1_TASK4": "<strong>Ottimizzazione SEO, monitoraggio e sicurezza dati:</strong> Implementazione di Google Analytics 4, configurazione avanzata di Google Tag Manager, integrazione di reCAPTCHA per la protezione dei form e ottimizzazione SEO tecnica per migliorare la visibilità organica e la sicurezza dei siti.",
+    "JOB1_TITLE": "Software Engineer",
+    "JOB1_COMPANY": "StudiWeb",
+    "JOB1_PERIOD": "Aprile 2023 - Presente",
+    "JOB1_TASK1": "<strong>CI/CD e deploy:</strong> Introdotte pipeline CI/CD automatizzate, riducendo i tempi di deploy da 35 a meno di 10 minuti e le release fallite del 40%.",
+    "JOB1_TASK2": "<strong>Sviluppo web (Symfony e Angular):</strong> Progettazione e manutenzione di piattaforme custom in Symfony (PHP), TypeScript, Angular e HTML5/CSS3, incluso il completamento e il rilascio in produzione di progetti TypeScript preesistenti. Sviluppato il sito web aziendale principale, contribuendo a un aumento del 30% dell’acquisizione clienti e dei tassi di conversione.",
+    "JOB1_TASK3": "<strong>Performance e cloud:</strong> Isolati siti sovraccarichi e risolti i colli di bottiglia, riducendo del 38% il carico del database nelle ore di picco. Guidate le migrazioni al cloud di strumenti interni e siti web, riducendo i costi di hosting del 30% e i tempi di manutenzione del 45%.",
+    "JOB1_TASK4": "<strong>Gestione WordPress e PrestaShop:</strong> Installazione e configurazione di nuovi siti, gestione di domini (DNS), servizi email e certificati SSL. Supporto tecnico avanzato al team di design nella gestione di bug e problematiche generali, inclusi i siti sviluppati con Elementor.",
+    "JOB1_TASK5": "<strong>SEO, monitoraggio e sicurezza:</strong> Implementazione di Google Analytics 4, configurazione avanzata di Google Tag Manager, integrazione di reCAPTCHA per la protezione dei form e ottimizzazione SEO tecnica, migliorando visibilità organica e sicurezza del sito.",
+    "JOB1_TASK6": "<strong>Mentoring e documentazione:</strong> Affiancati nuovi ingegneri e redatta la documentazione delle funzionalità SaaS, standardizzando i workflow e riducendo i tempi di onboarding.",
 
-    "JOB2_PERIOD": "06/2022 - 09/2023",
-    "JOB2_TASK1": "<strong>Sviluppo di template custom avanzati:</strong> Creazione di template dinamici e completamente responsive utilizzando HTML, SCSS e JavaScript, progettati per integrarsi perfettamente nel software aziendale e garantire un'esperienza utente fluida su tutte le piattaforme.",
-    "JOB2_TASK2": "<strong>Gestione di ticket tecnici complessi:</strong> Supporto diretto ai clienti su problematiche tecniche di livello avanzato, comprese richieste relative a funzionalità di realtà virtuale e ottimizzazione delle prestazioni della piattaforma.",
-    "JOB2_TASK3": "<strong>Collaborazione interfunzionale:</strong> Cooperazione continua con il team di sviluppo per l'implementazione di miglioramenti, debug e potenziamento delle funzionalità core dei progetti in corso.",
-
-
-    "JOB3_PERIOD": "08/2021 – 06/2022",
-    "JOB3_TASK1": "<strong>Progetti AR/VR – Unity & Oculus App Lab:</strong> Sviluppo di applicazioni immersive in Unity con C#, tra cui un’app VR interamente realizzata per dispositivi Meta Quest e pubblicata su App Lab. Gestione completa del ciclo di sviluppo: modellazione 3D, logiche interattive, ottimizzazione e distribuzione. Esperienze progettate per massimizzare l’engagement e la qualità immersiva.",
-    "JOB3_TASK2": "<strong>Progetto SEO-oriented:</strong> Sviluppo di un CMS custom in Symfony per blog SEO, con import Database di un vecchio sito WordPress. Gestione articoli, categorie, tag e metadati. Creazione template grafico responsive e ottimizzato per mobile. Focus su SEO avanzata, URL semantici e facilità di gestione dei contenuti.",
-    "JOB3_TASK3": "<strong>Database Management:</strong> Migrazione, esportazione e integrazione di database complessi per garantire efficienza, sicurezza, integrità dati e stabilità delle piattaforme digitali.",
-    "JOB3_TASK4": "<strong>Progettazione 3D e Integrazione Fisico-Digitale:</strong> Creazione di modelli tridimensionali in Blender, destinati sia alla stampa 3D fisica sia alla visualizzazione in Realtà Aumentata (WebAR)."
-
+    "JOB2_TITLE": "Software Engineer Intern",
+    "JOB2_COMPANY": "TourMake",
+    "JOB2_PERIOD": "Agosto 2021 - Marzo 2023",
+    "JOB2_TASK1": "<strong>Sviluppo funzionalità SaaS:</strong> Realizzate e rilasciate personalizzazioni specifiche per i clienti sulla piattaforma SaaS principale, su 7 progetti, inclusi template dinamici completamente responsive (HTML, SCSS, JavaScript) integrati nel software aziendale.",
+    "JOB2_TASK2": "<strong>Piattaforma SEO:</strong> Sviluppata una piattaforma blog SEO-optimized, un CMS custom in Symfony migrato da un database WordPress legacy, con gestione di articoli, categorie, tag e metadati, URL semantici e template ottimizzato per mobile, aumentando il traffico organico del 40%.",
+    "JOB2_TASK3": "<strong>AR/VR — Unity e Oculus App Lab:</strong> Sviluppate applicazioni immersive in Unity con C#, inclusa un’app VR per Meta Quest pubblicata su App Lab. Ciclo completo: modellazione 3D, logica interattiva, ottimizzazione e deployment. Realizzati inoltre modelli in Blender per stampa 3D e visualizzazione in WebAR.",
+    "JOB2_TASK4": "<strong>Architettura e collaborazione:</strong> Collaborato con ingegneri senior nelle revisioni dell’architettura, proponendo due approcci di versioning delle API approvati.",
+    "JOB2_TASK5": "<strong>Affidabilità e supporto:</strong> Diagnosticati e risolti bug in produzione nell’intero codebase, riducendo del 20% i ticket di errore ricorrenti. Gestiti ticket tecnici complessi, incluse funzionalità di realtà virtuale e ottimizzazione delle performance della piattaforma.",
+    "JOB2_TASK6": "<strong>Gestione database:</strong> Migrazione, esportazione e integrazione di database complessi per garantire efficienza, sicurezza, integrità dei dati e stabilità della piattaforma."
   },
+
+  "SKILLS": {
+    "STACK_TITLE": "Competenze tecniche",
+    "LANGUAGES_LABEL": "Linguaggi di programmazione",
+    "LANGUAGES_VALUE": "JavaScript (ES6+), TypeScript, PHP, Bash, SQL, HTML, CSS",
+    "FRAMEWORKS_LABEL": "Framework e strumenti",
+    "FRAMEWORKS_VALUE": "React, Angular, Symfony, Laravel, Backbone, Docker, FastAPI",
+    "CONCEPTS_LABEL": "Concetti",
+    "CONCEPTS_VALUE": "OOP, Sistemi Distribuiti, Architettura Event-Driven, API RESTful, CI/CD, Machine Learning",
+    "CERTIFICATE_LABEL": "Certificazione",
+    "CERTIFICATE_VALUE": "Google IT Support Professional Certificate — I.I.S.S. Luigi dell’Erba, Castellana Grotte (BA)"
+  },
+
   "PORTFOLIO": {
     "TITLE": "I miei progetti",
     "PROJECT1": "Applicazione e-commerce in Angular",
@@ -60,7 +74,7 @@
   "CONTACT": {
     "TITLE": "Contattami",
     "EMAIL": "Email",
-    "RAGIONE":"Ragione Sociale",
+    "RAGIONE": "Ragione Sociale",
     "MESSAGE": "Messaggio",
     "EMAIL_REQUIRED": "Email è obbligatoria",
     "EMAIL_INVALID": "Inserisci un indirizzo email valido",
@@ -74,7 +88,7 @@
     "DISMISS": "Accetta tutti",
     "ALLOW": "Personalizza"
   },
- "FOOTER": {
+  "FOOTER": {
     "CONTACTS": "Contatti",
     "RIGHTS": "Tutti i diritti riservati"
   }

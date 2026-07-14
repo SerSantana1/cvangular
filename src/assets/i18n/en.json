@@ -6,50 +6,63 @@
   },
   "HERO": {
     "TITLE": "Hi, I’m",
-    "SUB_DESCRIPTION": "FullStack Developer with over 4 years of experience in web development and IT systems management.",
-    "DESCRIPTION": "Web developer with over 4 years of experience in front-end and full-stack development. Proficient in React and Angular, with skills in REST API integration and relational database management. Experience in configuring Linux servers and building scalable, high-performance applications.",
+    "SUB_DESCRIPTION": "Software Engineer with 5+ years building and scaling web platforms.",
+    "DESCRIPTION": "Software Engineer specialising in web platforms and cloud infrastructure. I build with TypeScript, Angular, React, Symfony and Docker, and I care about measurable outcomes: CI/CD pipelines that cut deploy times from 35 minutes to under 10, cloud migrations that reduced hosting costs by 30%, and performance work that cut peak database load by 38%.",
     "BUTTON": "View My Resume",
     "BUTTON-LINK": "/Serjio_Santana_CV_en.pdf"
   },
   "ABOUT": {
     "TITLE": "About Me",
+    "ROLE": "Software Engineer",
     "SKILLS": "Skills",
     "EXPERIENCE": "Experience",
-    "TEXT": "Hi, I’m Serjio, a FullStack Developer with 4+ years of experience in web development and IT systems management. I specialize in Symfony and Angular frameworks, with expertise in Linux server configuration, relational databases, and AR/VR application development. Passionate about technological innovation and problem solving.",
+    "TEXT": "Hi, I’m Serjio, a Software Engineer with 5+ years of experience across web development, cloud infrastructure and IT systems. I work with TypeScript, Angular, React, Symfony, Laravel and Docker, and I’ve led CI/CD adoption, cloud migrations and performance optimisation. I also mentor new engineers and document what I build.",
 
     "NATIONALITY_LABEL": "Nationality",
     "NATIONALITY_VALUE": "Italian",
 
     "EXPERIENCE_LABEL": "Experience",
-    "EXPERIENCE_VALUE": "4+ years",
+    "EXPERIENCE_VALUE": "5+ years",
 
-    "FREELANCE_LABEL": "Freelance",
-    "FREELANCE_VALUE": "Available",
+    "AVAILABILITY_LABEL": "Availability",
+    "AVAILABILITY_VALUE": "Open to opportunities",
 
     "LANGUAGES_LABEL": "Languages",
     "LANGUAGES_VALUE": "Italian, English, Portuguese"
   },
 
   "EXPERIENCE": {
-    "JOB1_PERIOD": "2023 - present",
-    "JOB1_TASK1": "<strong>Web development:</strong> Design and maintenance of custom websites built with Symfony (PHP), HTML5, CSS3, JavaScript, and TypeScript. Full management of multi-technology platforms, with a focus on performance, compatibility, and scalability.",
-    "JOB1_TASK2": "<strong>Angular Developer - Advanced Projects:</strong> Research and development of Angular applications aimed at bringing technological innovation and best practices into production environments. Completion and release of pre-existing TypeScript projects, with code optimization and production deployment.",
-    "JOB1_TASK3": "<strong>WordPress & PrestaShop Management:</strong> Installation and configuration of new websites, domain (DNS) management, email services, and SSL certificates. Advanced technical support for the design team in handling bugs and general issues on websites, including those developed with Elementor.",
-    "JOB1_TASK4": "<strong>SEO optimization, monitoring, and data security:</strong> Implementation of Google Analytics 4, advanced setup of Google Tag Manager, integration of reCAPTCHA for form protection, and technical SEO optimization to improve organic visibility and website security.",
+    "JOB1_TITLE": "Software Engineer",
+    "JOB1_COMPANY": "StudiWeb",
+    "JOB1_PERIOD": "April 2023 - Present",
+    "JOB1_TASK1": "<strong>CI/CD &amp; deployment:</strong> Introduced automated CI/CD pipelines, cutting deploy time from 35 minutes to under 10 and reducing failed releases by 40%.",
+    "JOB1_TASK2": "<strong>Web development (Symfony &amp; Angular):</strong> Design and maintenance of custom platforms in Symfony (PHP), TypeScript, Angular and HTML5/CSS3, including completing and shipping pre-existing TypeScript projects to production. Developed the company’s main website, contributing to a 30% increase in customer acquisition and conversion.",
+    "JOB1_TASK3": "<strong>Performance &amp; cloud:</strong> Isolated overloaded sites and resolved resource bottlenecks, cutting peak-hour database load by 38%. Led cloud migrations of internal tools and websites, reducing hosting costs by 30% and maintenance time by 45%.",
+    "JOB1_TASK4": "<strong>WordPress &amp; PrestaShop management:</strong> Installation and configuration of new sites, domain (DNS) management, email services and SSL certificates. Advanced technical support to the design team on bugs and general issues, including Elementor-based sites.",
+    "JOB1_TASK5": "<strong>SEO, monitoring &amp; security:</strong> Implementation of Google Analytics 4, advanced Google Tag Manager setup, reCAPTCHA form protection and technical SEO, improving organic visibility and site security.",
+    "JOB1_TASK6": "<strong>Mentoring &amp; documentation:</strong> Mentored new engineers and authored SaaS feature documentation, standardising workflows and cutting onboarding time.",
 
+    "JOB2_TITLE": "Software Engineer Intern",
+    "JOB2_COMPANY": "TourMake",
+    "JOB2_PERIOD": "August 2021 - March 2023",
+    "JOB2_TASK1": "<strong>SaaS feature delivery:</strong> Built and shipped client-specific feature customisations on the core SaaS platform across 7 client projects, including fully responsive dynamic templates (HTML, SCSS, JavaScript) integrated into the company software.",
+    "JOB2_TASK2": "<strong>SEO platform:</strong> Built a managed SEO blog platform, a custom Symfony CMS migrated from a legacy WordPress database, with article, category, tag and metadata management, semantic URLs and a mobile-optimised template, lifting organic traffic by 40%.",
+    "JOB2_TASK3": "<strong>AR/VR — Unity &amp; Oculus App Lab:</strong> Developed immersive applications in Unity with C#, including a VR app for Meta Quest published on App Lab. Full cycle: 3D modelling, interactive logic, optimisation and deployment. Also produced Blender models for 3D printing and WebAR visualisation.",
+    "JOB2_TASK4": "<strong>Architecture &amp; collaboration:</strong> Collaborated with senior engineers in architecture reviews, proposing two approved API-versioning approaches.",
+    "JOB2_TASK5": "<strong>Reliability &amp; support:</strong> Diagnosed and fixed production bugs across the codebase, cutting recurring error tickets by 20%. Handled complex technical tickets, including virtual reality features and platform performance optimisation.",
+    "JOB2_TASK6": "<strong>Database management:</strong> Migration, export and integration of complex databases to ensure efficiency, security, data integrity and platform stability."
+  },
 
-    "JOB2_PERIOD": "06/2022 - 09/2023",
-    "JOB2_TASK1": "<strong>Advanced custom template development:</strong> Creation of fully responsive and dynamic templates using HTML, SCSS, and JavaScript, designed to integrate seamlessly into the company’s software and ensure a smooth user experience across all platforms.",
-    "JOB2_TASK2": "<strong>Complex technical ticket management:</strong> Direct support to clients on advanced technical issues, including requests related to virtual reality features and performance optimization of the platform.",
-    "JOB2_TASK3": "<strong>Cross-functional collaboration:</strong> Ongoing cooperation with the development team to implement improvements, debug issues, and enhance the core features of ongoing projects.",
-
-
-    "JOB3_PERIOD": "08/2021 – 06/2022",
-    "JOB3_TASK1": "<strong>AR/VR Projects – Unity & Oculus App Lab:</strong> Development of immersive applications in Unity with C#, including a fully built VR app for Meta Quest devices published on App Lab. Full-cycle management: 3D modeling, interactive logic, optimization, and deployment. Experiences designed to maximize engagement and immersive quality.",
-    "JOB3_TASK2": "<strong>SEO-oriented Project:</strong> Development of a custom CMS in Symfony for SEO-focused blogging, with database import from an older WordPress site. Article, category, tag, and metadata management. Creation of a responsive, mobile-optimized template with a strong focus on advanced SEO, semantic URLs, and easy content management.",
-    "JOB3_TASK3": "<strong>Database Management:</strong> Migration, export, and integration of complex databases to ensure efficiency, security, data integrity, and platform stability.",
-    "JOB3_TASK4": "<strong>3D Design & Physical-Digital Integration:</strong> Creation of 3D models in Blender, intended both for physical 3D printing and Augmented Reality (WebAR) visualization."
-
+  "SKILLS": {
+    "STACK_TITLE": "Technical Skills",
+    "LANGUAGES_LABEL": "Programming Languages",
+    "LANGUAGES_VALUE": "JavaScript (ES6+), TypeScript, PHP, Bash, SQL, HTML, CSS",
+    "FRAMEWORKS_LABEL": "Frameworks and Tools",
+    "FRAMEWORKS_VALUE": "React, Angular, Symfony, Laravel, Backbone, Docker, FastAPI",
+    "CONCEPTS_LABEL": "Concepts",
+    "CONCEPTS_VALUE": "OOP, Distributed Systems, Event-Driven Architecture, RESTful APIs, CI/CD, Machine Learning",
+    "CERTIFICATE_LABEL": "Certificate",
+    "CERTIFICATE_VALUE": "Google IT Support Professional Certificate — I.I.S.S. Luigi dell’Erba, Castellana Grotte (BA)"
   },
 
   "PORTFOLIO": {
@@ -79,5 +92,4 @@
     "CONTACTS": "Contacts",
     "RIGHTS": "All rights reserved"
   }
-
 }

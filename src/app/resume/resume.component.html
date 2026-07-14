@@ -40,7 +40,7 @@
                       <div class="row align-items-center justify-content-between">
                         <div class="col-lg-6 col-sm-12 col-md-6">
                           <div class="about-tab-content">
-                            <h4 class="title mt-4">Web Developer</h4>
+                            <h4 class="title mt-4">{{ "ABOUT.ROLE" | translate }}</h4>
                             <p class="para-desc text-muted mx-auto mb-0 mt-3">
                               {{ "ABOUT.TEXT" | translate }}
                             </p>
@@ -61,8 +61,9 @@
                                   }}</strong>
                               </li>
                               <li>
-                                Freelance <span>:</span><strong>{{
-                                  "ABOUT.FREELANCE_VALUE" | translate
+                                {{ "ABOUT.AVAILABILITY_LABEL" | translate }}
+                                <span>:</span><strong>{{
+                                  "ABOUT.AVAILABILITY_VALUE" | translate
                                   }}</strong>
                               </li>
                               <li>
@@ -111,10 +112,10 @@
                             <div class="experience-item">
                               <div class="expe-year-section d-flex mb-2">
                                 <i class="bi bi-calculator-fill me-2"></i>
-                                <h6 class="expe-year mb-0">2023 - presente</h6>
+                                <h6 class="expe-year mb-0">{{ 'EXPERIENCE.JOB1_PERIOD' | translate }}</h6>
                               </div>
-                              <h4 class="title">Web Developer & Webmaster</h4>
-                              <h6 class="expe-company">Tourmake Srl</h6>
+                              <h4 class="title">{{ 'EXPERIENCE.JOB1_TITLE' | translate }}</h4>
+                              <h6 class="expe-company">{{ 'EXPERIENCE.JOB1_COMPANY' | translate }}</h6>
                               <ul>
                                 <li [innerHTML]="
                                     'EXPERIENCE.JOB1_TASK1' | translate
@@ -128,6 +129,12 @@
                                 <li [innerHTML]="
                                     'EXPERIENCE.JOB1_TASK4' | translate
                                   "></li>
+                                <li [innerHTML]="
+                                    'EXPERIENCE.JOB1_TASK5' | translate
+                                  "></li>
+                                <li [innerHTML]="
+                                    'EXPERIENCE.JOB1_TASK6' | translate
+                                  "></li>
                               </ul>
                             </div>
                           </div>
@@ -137,12 +144,10 @@
                             <div class="experience-item">
                               <div class="expe-year-section d-flex mb-2">
                                 <i class="bi bi-calculator-fill me-2"></i>
-                                <h6 class="expe-year mb-0">
-                                  06/2022 - 09/2023
-                                </h6>
+                                <h6 class="expe-year mb-0">{{ 'EXPERIENCE.JOB2_PERIOD' | translate }}</h6>
                               </div>
-                              <h4 class="title">Software Developer</h4>
-                              <h6 class="expe-company">Tourmake Srl</h6>
+                              <h4 class="title">{{ 'EXPERIENCE.JOB2_TITLE' | translate }}</h4>
+                              <h6 class="expe-company">{{ 'EXPERIENCE.JOB2_COMPANY' | translate }}</h6>
                               <ul>
                                 <li [innerHTML]="
                                     'EXPERIENCE.JOB2_TASK1' | translate
@@ -153,33 +158,14 @@
                                 <li [innerHTML]="
                                     'EXPERIENCE.JOB2_TASK3' | translate
                                   "></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-12 col-lg-8 mb-5 mx-auto">
-                          <div class="experience-area">
-                            <div class="experience-item">
-                              <div class="expe-year-section d-flex mb-2">
-                                <i class="bi bi-calculator-fill me-2"></i>
-                                <h6 class="expe-year mb-0">
-                                  08/2021 – 06/2022
-                                </h6>
-                              </div>
-                              <h4 class="title">Full Stack Developer Junior</h4>
-                              <h6 class="expe-company">Tourmake Srl</h6>
-                              <ul>
                                 <li [innerHTML]="
-                                    'EXPERIENCE.JOB3_TASK1' | translate
+                                    'EXPERIENCE.JOB2_TASK4' | translate
                                   "></li>
                                 <li [innerHTML]="
-                                    'EXPERIENCE.JOB3_TASK2' | translate
+                                    'EXPERIENCE.JOB2_TASK5' | translate
                                   "></li>
                                 <li [innerHTML]="
-                                    'EXPERIENCE.JOB3_TASK3' | translate
-                                  "></li>
-                                <li [innerHTML]="
-                                    'EXPERIENCE.JOB3_TASK4' | translate
+                                    'EXPERIENCE.JOB2_TASK6' | translate
                                   "></li>
                               </ul>
                             </div>
@@ -331,6 +317,29 @@
                             </div>
                             <p class="skill-pare mx-auto mb-0">Linux</p>
                           </div>
+                        </div>
+                      </div>
+
+                      <div class="row justify-content-center">
+                        <div class="col-12 col-lg-10">
+                          <ul class="skill-stack list-unstyled ps-0 mb-0">
+                            <li class="mb-3">
+                              <span class="skill-stack__label d-block">{{ "SKILLS.LANGUAGES_LABEL" | translate }}</span>
+                              <span class="skill-stack__value">{{ "SKILLS.LANGUAGES_VALUE" | translate }}</span>
+                            </li>
+                            <li class="mb-3">
+                              <span class="skill-stack__label d-block">{{ "SKILLS.FRAMEWORKS_LABEL" | translate }}</span>
+                              <span class="skill-stack__value">{{ "SKILLS.FRAMEWORKS_VALUE" | translate }}</span>
+                            </li>
+                            <li class="mb-3">
+                              <span class="skill-stack__label d-block">{{ "SKILLS.CONCEPTS_LABEL" | translate }}</span>
+                              <span class="skill-stack__value">{{ "SKILLS.CONCEPTS_VALUE" | translate }}</span>
+                            </li>
+                            <li class="mb-0">
+                              <span class="skill-stack__label d-block">{{ "SKILLS.CERTIFICATE_LABEL" | translate }}</span>
+                              <span class="skill-stack__value">{{ "SKILLS.CERTIFICATE_VALUE" | translate }}</span>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
