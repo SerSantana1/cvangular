@@ -31,6 +31,8 @@
           <li class="nav-item active"><a href="#home" class="nav-link" [class.nav-link-black]="!isAtTop">Home</a></li>
           <li class="nav-item"><a href="#about" class="nav-link" [class.nav-link-black]="!isAtTop">{{ 'MENU.ABOUT' |
               translate }}</a></li>
+          <li class="nav-item"><a [href]="'HERO.BUTTON-LINK' | translate" target="_blank" rel="noopener noreferrer"
+              class="nav-link" [class.nav-link-black]="!isAtTop">{{ 'MENU.CV' | translate }}</a></li>
           <li class="nav-item"><a href="#contact" class="nav-link" [class.nav-link-black]="!isAtTop">{{ 'MENU.CONTACT' |
               translate }}</a></li>
         </ul>

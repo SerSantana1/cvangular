@@ -3,12 +3,13 @@
     "ABOUT": "Chi sono",
     "PORTFOLIO": "Portfolio",
     "CERTIFICATIONS": "Certificazioni",
+    "CV": "CV",
     "CONTACT": "Contatti"
   },
   "HERO": {
     "TITLE": "Ciao, sono",
-    "SUB_DESCRIPTION": "Software Engineer con oltre 5 anni di esperienza nella creazione e scalabilità di piattaforme web.",
-    "DESCRIPTION": "Software Engineer specializzato in piattaforme web e infrastruttura cloud. Lavoro con TypeScript, Angular, React, Symfony e Docker, con attenzione ai risultati misurabili: pipeline CI/CD che hanno ridotto i tempi di deploy da 35 a meno di 10 minuti, migrazioni cloud che hanno abbattuto i costi di hosting del 30% e ottimizzazioni che hanno ridotto del 38% il carico del database nelle ore di picco.",
+    "SUB_DESCRIPTION": "Software engineer full-stack con un focus sulla sicurezza.",
+    "DESCRIPTION": "Software engineer con oltre 5 anni di esperienza nella creazione e scalabilità di piattaforme web con TypeScript, Angular, React, Symfony e Docker. Do valore ai risultati misurabili: pipeline CI/CD che hanno ridotto i tempi di deploy da 35 a meno di 10 minuti, migrazioni cloud che hanno abbattuto i costi di hosting del 30% e ottimizzazioni che hanno ridotto del 38% il carico del database nelle ore di picco. Oggi sto indirizzando questa esperienza verso la cybersecurity: scrivo codice più sicuro e sviluppo competenze pratiche con i lab di TryHackMe e il percorso CompTIA Security+.",
     "BUTTON": "Visualizza il mio CV",
     "BUTTON-LINK": "/Serjio_Santana_CV_it.pdf"
   },
@@ -18,6 +19,8 @@
     "SKILLS": "Competenze",
     "EXPERIENCE": "Esperienze Lavorative",
     "TEXT": "Ciao, sono Serjio, Software Engineer con oltre 5 anni di esperienza tra sviluppo web, infrastruttura cloud e sistemi IT. Lavoro con TypeScript, Angular, React, Symfony, Laravel e Docker; ho guidato l’adozione di CI/CD, migrazioni cloud e attività di ottimizzazione delle performance. Affianco inoltre i nuovi ingegneri e documento ciò che sviluppo.",
+    "SECURITY_TITLE": "Verso la cybersecurity",
+    "SECURITY_TEXT": "Dopo anni passati a rilasciare e gestire piattaforme web, ho visto in prima persona come le applicazioni si rompono — e preferisco individuare quelle debolezze prima che lo faccia un attaccante. Un background da sviluppatore è un vero vantaggio: conosco autenticazione, validazione degli input, dipendenze e deployment dall'interno, e questo rende naturali la scrittura di codice sicuro e il ragionamento sulle minacce. Sto formalizzando questa direzione con il certificato Google Cybersecurity, il percorso Security Analyst di TryHackMe e la CompTIA Security+.",
 
     "NATIONALITY_LABEL": "Nazionalità",
     "NATIONALITY_VALUE": "Italiano",
@@ -73,10 +76,10 @@
   },
 
   "PORTFOLIO": {
-    "TITLE": "I miei progetti",
-    "PROJECT1": "Applicazione e-commerce in Angular",
-    "PROJECT2": "Sito portfolio responsive",
-    "PROJECT3": "Gestione contenuti con Symfony"
+    "TITLE": "Progetti selezionati",
+    "VISIT": "Visita il sito",
+    "MOVIEDUX_NAME": "MovieDux",
+    "MOVIEDUX_DESC": "Prototipo di interfaccia streaming con funzionalità di ricerca e filtraggio."
   },
   "CONTACT": {
     "TITLE": "Contattami",

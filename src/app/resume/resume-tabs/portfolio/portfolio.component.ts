@@ -1,8 +1,9 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-portfolio',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './portfolio.component.html',
   changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './portfolio.component.scss'

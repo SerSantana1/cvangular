@@ -21,14 +21,18 @@
     <div class="row">
       <a href="#" class="close"></a>
       <div class="description">
-        <h1>MovieDux</h1>
+        <h1>{{ 'PORTFOLIO.MOVIEDUX_NAME' | translate }}</h1>
         <p>
-      Prototipo di interfaccia streaming con funzionalità di ricerca.
+          {{ 'PORTFOLIO.MOVIEDUX_DESC' | translate }}
         </p>
+        <!-- TODO(user): if MovieDux has a genuine security-relevant aspect
+             (e.g. input sanitisation of the search field, dependency hygiene,
+             safe handling of the external movie API), add a translated
+             PORTFOLIO.MOVIEDUX_SECURITY line here and render it. Do not invent one. -->
          <a href="https://moviedux.serjiosantana.it/"
                         class="btn btn-primary rounded-pill mt-5  d-inline-flex align-items-center gap-2"
                         target="_blank" rel="noopener noreferrer">
-                   Visita il sito
+                   {{ 'PORTFOLIO.VISIT' | translate }}
                         <i class="bi bi-box-arrow-up-right"></i>
                     </a>
       </div>
