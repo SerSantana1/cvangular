@@ -1,0 +1,46 @@
+<div class="certs-wrapper">
+  <div class="title-section text-center mb-5">
+    <h3 class="certs-heading">{{ 'CERTS.TITLE' | translate }}</h3>
+    <p class="certs-subtitle text-muted">{{ 'CERTS.SUBTITLE' | translate }}</p>
+  </div>
+
+  <ol class="cert-timeline list-unstyled">
+    @for (cert of certifications; track cert.name) {
+      <li class="cert-item">
+        <span class="cert-item__marker" aria-hidden="true">
+          <i class="bi {{ statusMeta[cert.status].icon }}"></i>
+        </span>
+
+        <div class="cert-item__card">
+          <div class="cert-item__head">
+            <h4 class="cert-item__name">{{ cert.name }}</h4>
+            <span [class]="statusClass(cert.status)">
+              <i class="bi {{ statusMeta[cert.status].icon }}" aria-hidden="true"></i>
+              {{ statusMeta[cert.status].labelKey | translate }}
+            </span>
+          </div>
+
+          <p class="cert-item__issuer">{{ cert.issuer }}</p>
+
+          @if (cert.date) {
+            <p class="cert-item__date">
+              <i class="bi bi-calendar3 me-1" aria-hidden="true"></i>{{ cert.date }}
+            </p>
+          }
+
+          @if (cert.status === 'completed' && cert.verifyUrl) {
+            <a
+              class="cert-item__verify"
+              [href]="cert.verifyUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {{ 'CERTS.VERIFY' | translate }}
+              <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+            </a>
+          }
+        </div>
+      </li>
+    }
+  </ol>
+</div>

@@ -1,0 +1,132 @@
+$accent: #ebb884;
+$security: #2f6f8f; // subtle, professional security accent (AA on white)
+$ink: #1d1d1d;
+$muted: #6c757d;
+
+.skills-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.skill-category {
+  margin-bottom: 2.5rem;
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    color: $ink;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+    i {
+      color: $accent;
+    }
+  }
+
+  // Subtle security accent — no clichés, just a themed heading icon.
+  &:nth-child(2) &__title i {
+    color: $security;
+  }
+}
+
+.skill-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.75rem;
+  margin: 0;
+}
+
+.skill-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 0.9rem;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+
+  &:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    transform: translateY(-2px);
+  }
+
+  &__logo {
+    flex: 0 0 28px;
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+
+    &--placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $muted;
+      background: #f1f2f3;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    min-width: 0;
+  }
+
+  &__name {
+    font-size: 15px;
+    font-weight: 500;
+    color: $ink;
+    text-decoration: none;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  &__evidence {
+    font-size: 11px;
+    margin-left: 2px;
+  }
+}
+
+.level-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  align-self: flex-start;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 2px 9px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+
+  &--professional {
+    color: #6b4a1f;
+    background: rgba(235, 184, 132, 0.22);
+    border-color: rgba(235, 184, 132, 0.6);
+  }
+
+  &--project {
+    color: #33383d;
+    background: rgba(108, 117, 125, 0.14);
+    border-color: rgba(108, 117, 125, 0.35);
+  }
+
+  &--learning {
+    color: #1f5066;
+    background: rgba(47, 111, 143, 0.12);
+    border-color: rgba(47, 111, 143, 0.45);
+  }
+}
+
+.skills-legend {
+  font-size: 13px;
+  margin-top: 1rem;
+  text-align: center;
+}

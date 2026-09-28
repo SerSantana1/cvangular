@@ -1,0 +1,56 @@
+<div class="skills-wrapper">
+  @for (cat of categories; track cat.id) {
+    <section class="skill-category" [attr.aria-labelledby]="'skills-' + cat.id">
+      <h3 class="skill-category__title" [id]="'skills-' + cat.id">
+        <i class="bi {{ cat.icon }} me-2" aria-hidden="true"></i>
+        {{ cat.titleKey | translate }}
+      </h3>
+
+      <ul class="skill-list list-unstyled">
+        @for (skill of cat.skills; track skill.name) {
+          <li class="skill-card">
+            @if (skill.logo) {
+              <img
+                [src]="skill.logo"
+                [alt]="skill.name + ' logo'"
+                class="skill-card__logo"
+                width="28"
+                height="28"
+                loading="lazy"
+              />
+            } @else {
+              <span class="skill-card__logo skill-card__logo--placeholder" aria-hidden="true">
+                <i class="bi bi-braces"></i>
+              </span>
+            }
+
+            <span class="skill-card__body">
+              @if (skill.evidenceUrl) {
+                <a
+                  class="skill-card__name"
+                  [href]="skill.evidenceUrl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >{{ skill.name }}
+                  <i class="bi bi-box-arrow-up-right skill-card__evidence" aria-hidden="true"></i>
+                </a>
+              } @else {
+                <span class="skill-card__name">{{ skill.name }}</span>
+              }
+
+              <span [class]="levelClass(skill.level)">
+                <i class="bi {{ levelMeta[skill.level].icon }}" aria-hidden="true"></i>
+                {{ levelMeta[skill.level].labelKey | translate }}
+              </span>
+            </span>
+          </li>
+        }
+      </ul>
+    </section>
+  }
+
+  <p class="skills-legend text-muted">
+    <i class="bi bi-info-circle me-1" aria-hidden="true"></i>
+    {{ 'SKILLS.LEGEND' | translate }}
+  </p>
+</div>

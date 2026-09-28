@@ -2,6 +2,7 @@
   "MENU": {
     "ABOUT": "Chi sono",
     "PORTFOLIO": "Portfolio",
+    "CERTIFICATIONS": "Certificazioni",
     "CONTACT": "Contatti"
   },
   "HERO": {
@@ -54,15 +55,21 @@
   },
 
   "SKILLS": {
-    "STACK_TITLE": "Competenze tecniche",
-    "LANGUAGES_LABEL": "Linguaggi di programmazione",
-    "LANGUAGES_VALUE": "JavaScript (ES6+), TypeScript, PHP, Bash, SQL, HTML, CSS",
-    "FRAMEWORKS_LABEL": "Framework e strumenti",
-    "FRAMEWORKS_VALUE": "React, Angular, Symfony, Laravel, Backbone, Docker, FastAPI",
-    "CONCEPTS_LABEL": "Concetti",
-    "CONCEPTS_VALUE": "OOP, Sistemi Distribuiti, Architettura Event-Driven, API RESTful, CI/CD, Machine Learning",
-    "CERTIFICATE_LABEL": "Certificazione",
-    "CERTIFICATE_VALUE": "Google IT Support Professional Certificate — I.I.S.S. Luigi dell’Erba, Castellana Grotte (BA)"
+    "CAT_ENGINEERING": "Sviluppo Software",
+    "CAT_SECURITY": "Sicurezza",
+    "CAT_TOOLS": "Strumenti & Piattaforme",
+    "LEVEL_PROFESSIONAL": "Uso professionale",
+    "LEVEL_PROJECT": "Esperienza su progetti",
+    "LEVEL_LEARNING": "In fase di studio",
+    "LEGEND": "I livelli sono dichiarati in modo onesto: uso professionale, esperienza su progetti o in fase di studio — nessun indicatore gonfiato."
+  },
+  "CERTS": {
+    "TITLE": "Certificazioni & Percorso di studio",
+    "SUBTITLE": "A che punto sono nel percorso verso la cybersecurity: completate, in corso e pianificate.",
+    "STATUS_COMPLETED": "Completata",
+    "STATUS_IN_PROGRESS": "In corso",
+    "STATUS_PLANNED": "Pianificata",
+    "VERIFY": "Verifica credenziale"
   },
 
   "PORTFOLIO": {
