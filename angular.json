@@ -45,6 +45,16 @@
         "glob": "**/*",
         "input": "src/.well-known",
         "output": ".well-known"
+      },
+      {
+        "glob": "robots.txt",
+        "input": "src",
+        "output": "."
+      },
+      {
+        "glob": "sitemap.xml",
+        "input": "src",
+        "output": "."
       }
     ],
     "styles": [
@@ -71,7 +81,15 @@
           "maximumError": "8kB"
         }
       ],
-      "outputHashing": "all"
+      "outputHashing": "all",
+      "optimization": {
+        "scripts": true,
+        "fonts": true,
+        "styles": {
+          "minify": true,
+          "inlineCritical": false
+        }
+      }
     },
     "development": {
       "optimization": false,
