@@ -7,6 +7,16 @@
   height: 100vh;
 }
 
+// Honeypot: keep it out of sight and out of the tab order without display:none
+// (some bots skip display:none fields).
+.visually-hidden-honeypot {
+  position: absolute;
+  left: -5000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .btn {
     padding: 15px 30px;
     outline: none;

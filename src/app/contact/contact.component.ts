@@ -21,6 +21,12 @@ export class ContactComponent {
     messaggio: '',
   }
 
+  /** Honeypot: must stay empty. If a bot fills it, the submission is dropped. */
+  honeypot = '';
+  /** Timestamp of the last accepted submit, for basic client-side throttling. */
+  private lastSubmit = 0;
+  private static readonly MIN_SUBMIT_INTERVAL_MS = 5000;
+
     private translate = inject(TranslateService);
 
   switchLanguage(lang: string) {
@@ -34,6 +40,19 @@ export class ContactComponent {
   @ViewChild('contactForm') contactForm!: NgForm;
 
   async onSubmit (){
+    // Silently drop bot submissions that tripped the honeypot.
+    if (this.honeypot.trim() !== '') {
+      this.contactForm.reset();
+      return;
+    }
+
+    // Basic client-side throttle to blunt rapid automated resubmits.
+    const now = Date.now();
+    if (now - this.lastSubmit < ContactComponent.MIN_SUBMIT_INTERVAL_MS) {
+      return;
+    }
+    this.lastSubmit = now;
+
     try {
       await emailjs.send(
         'service_d7dj3r5',

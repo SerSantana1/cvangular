@@ -40,6 +40,11 @@
         "glob": "*.pdf",
         "input": "src/files",
         "output": "."
+      },
+      {
+        "glob": "**/*",
+        "input": "src/.well-known",
+        "output": ".well-known"
       }
     ],
     "styles": [
