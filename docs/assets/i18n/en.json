@@ -2,12 +2,14 @@
   "MENU": {
     "ABOUT": "About Me",
     "PORTFOLIO": "Portfolio",
+    "CERTIFICATIONS": "Certifications",
+    "CV": "CV",
     "CONTACT": "Contact"
   },
   "HERO": {
     "TITLE": "Hi, I’m",
-    "SUB_DESCRIPTION": "Software Engineer with 5+ years building and scaling web platforms.",
-    "DESCRIPTION": "Software Engineer specialising in web platforms and cloud infrastructure. I build with TypeScript, Angular, React, Symfony and Docker, and I care about measurable outcomes: CI/CD pipelines that cut deploy times from 35 minutes to under 10, cloud migrations that reduced hosting costs by 30%, and performance work that cut peak database load by 38%.",
+    "SUB_DESCRIPTION": "Full-stack software engineer with a security focus.",
+    "DESCRIPTION": "Software engineer with 5+ years building and scaling web platforms with TypeScript, Angular, React, Symfony and Docker. I care about measurable outcomes: CI/CD pipelines that cut deploy times from 35 minutes to under 10, cloud migrations that reduced hosting costs by 30%, and performance work that cut peak database load by 38%. I'm now channelling that experience into cybersecurity — writing safer code and building hands-on skills through TryHackMe labs and the CompTIA Security+ path.",
     "BUTTON": "View My Resume",
     "BUTTON-LINK": "/Serjio_Santana_CV_en.pdf"
   },
@@ -17,6 +19,8 @@
     "SKILLS": "Skills",
     "EXPERIENCE": "Experience",
     "TEXT": "Hi, I’m Serjio, a Software Engineer with 5+ years of experience across web development, cloud infrastructure and IT systems. I work with TypeScript, Angular, React, Symfony, Laravel and Docker, and I’ve led CI/CD adoption, cloud migrations and performance optimisation. I also mentor new engineers and document what I build.",
+    "SECURITY_TITLE": "Moving into cybersecurity",
+    "SECURITY_TEXT": "After years shipping and operating web platforms, I've seen first-hand how applications break — and I'd rather find those weaknesses before an attacker does. A developer background is a real advantage here: I understand authentication, input validation, dependencies and deployment from the inside, which makes secure coding and threat reasoning feel natural. I'm now formalising that direction with the Google Cybersecurity certificate, TryHackMe's Security Analyst path and the CompTIA Security+.",
 
     "NATIONALITY_LABEL": "Nationality",
     "NATIONALITY_VALUE": "Italian",
@@ -54,22 +58,28 @@
   },
 
   "SKILLS": {
-    "STACK_TITLE": "Technical Skills",
-    "LANGUAGES_LABEL": "Programming Languages",
-    "LANGUAGES_VALUE": "JavaScript (ES6+), TypeScript, PHP, Bash, SQL, HTML, CSS",
-    "FRAMEWORKS_LABEL": "Frameworks and Tools",
-    "FRAMEWORKS_VALUE": "React, Angular, Symfony, Laravel, Backbone, Docker, FastAPI",
-    "CONCEPTS_LABEL": "Concepts",
-    "CONCEPTS_VALUE": "OOP, Distributed Systems, Event-Driven Architecture, RESTful APIs, CI/CD, Machine Learning",
-    "CERTIFICATE_LABEL": "Certificate",
-    "CERTIFICATE_VALUE": "Google IT Support Professional Certificate — I.I.S.S. Luigi dell’Erba, Castellana Grotte (BA)"
+    "CAT_ENGINEERING": "Software Engineering",
+    "CAT_SECURITY": "Security",
+    "CAT_TOOLS": "Tools & Platforms",
+    "LEVEL_PROFESSIONAL": "Professional use",
+    "LEVEL_PROJECT": "Project experience",
+    "LEVEL_LEARNING": "Currently learning",
+    "LEGEND": "Levels are self-reported and honest: professional use, project experience, or currently learning — no inflated meters."
+  },
+  "CERTS": {
+    "TITLE": "Certifications & Learning Path",
+    "SUBTITLE": "Where I am on the road into cybersecurity — completed, in progress, and planned.",
+    "STATUS_COMPLETED": "Completed",
+    "STATUS_IN_PROGRESS": "In progress",
+    "STATUS_PLANNED": "Planned",
+    "VERIFY": "Verify credential"
   },
 
   "PORTFOLIO": {
     "TITLE": "Selected Projects",
-    "PROJECT1": "E-commerce application in Angular",
-    "PROJECT2": "Responsive portfolio website",
-    "PROJECT3": "Content management system with Symfony"
+    "VISIT": "Visit the site",
+    "MOVIEDUX_NAME": "MovieDux",
+    "MOVIEDUX_DESC": "A streaming-interface prototype with search and filtering."
   },
   "CONTACT": {
     "TITLE": "Get in Touch",

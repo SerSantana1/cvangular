@@ -2,12 +2,14 @@
   "MENU": {
     "ABOUT": "Chi sono",
     "PORTFOLIO": "Portfolio",
+    "CERTIFICATIONS": "Certificazioni",
+    "CV": "CV",
     "CONTACT": "Contatti"
   },
   "HERO": {
     "TITLE": "Ciao, sono",
-    "SUB_DESCRIPTION": "Software Engineer con oltre 5 anni di esperienza nella creazione e scalabilità di piattaforme web.",
-    "DESCRIPTION": "Software Engineer specializzato in piattaforme web e infrastruttura cloud. Lavoro con TypeScript, Angular, React, Symfony e Docker, con attenzione ai risultati misurabili: pipeline CI/CD che hanno ridotto i tempi di deploy da 35 a meno di 10 minuti, migrazioni cloud che hanno abbattuto i costi di hosting del 30% e ottimizzazioni che hanno ridotto del 38% il carico del database nelle ore di picco.",
+    "SUB_DESCRIPTION": "Software engineer full-stack con un focus sulla sicurezza.",
+    "DESCRIPTION": "Software engineer con oltre 5 anni di esperienza nella creazione e scalabilità di piattaforme web con TypeScript, Angular, React, Symfony e Docker. Do valore ai risultati misurabili: pipeline CI/CD che hanno ridotto i tempi di deploy da 35 a meno di 10 minuti, migrazioni cloud che hanno abbattuto i costi di hosting del 30% e ottimizzazioni che hanno ridotto del 38% il carico del database nelle ore di picco. Oggi sto indirizzando questa esperienza verso la cybersecurity: scrivo codice più sicuro e sviluppo competenze pratiche con i lab di TryHackMe e il percorso CompTIA Security+.",
     "BUTTON": "Visualizza il mio CV",
     "BUTTON-LINK": "/Serjio_Santana_CV_it.pdf"
   },
@@ -17,6 +19,8 @@
     "SKILLS": "Competenze",
     "EXPERIENCE": "Esperienze Lavorative",
     "TEXT": "Ciao, sono Serjio, Software Engineer con oltre 5 anni di esperienza tra sviluppo web, infrastruttura cloud e sistemi IT. Lavoro con TypeScript, Angular, React, Symfony, Laravel e Docker; ho guidato l’adozione di CI/CD, migrazioni cloud e attività di ottimizzazione delle performance. Affianco inoltre i nuovi ingegneri e documento ciò che sviluppo.",
+    "SECURITY_TITLE": "Verso la cybersecurity",
+    "SECURITY_TEXT": "Dopo anni passati a rilasciare e gestire piattaforme web, ho visto in prima persona come le applicazioni si rompono — e preferisco individuare quelle debolezze prima che lo faccia un attaccante. Un background da sviluppatore è un vero vantaggio: conosco autenticazione, validazione degli input, dipendenze e deployment dall'interno, e questo rende naturali la scrittura di codice sicuro e il ragionamento sulle minacce. Sto formalizzando questa direzione con il certificato Google Cybersecurity, il percorso Security Analyst di TryHackMe e la CompTIA Security+.",
 
     "NATIONALITY_LABEL": "Nazionalità",
     "NATIONALITY_VALUE": "Italiano",
@@ -54,22 +58,28 @@
   },
 
   "SKILLS": {
-    "STACK_TITLE": "Competenze tecniche",
-    "LANGUAGES_LABEL": "Linguaggi di programmazione",
-    "LANGUAGES_VALUE": "JavaScript (ES6+), TypeScript, PHP, Bash, SQL, HTML, CSS",
-    "FRAMEWORKS_LABEL": "Framework e strumenti",
-    "FRAMEWORKS_VALUE": "React, Angular, Symfony, Laravel, Backbone, Docker, FastAPI",
-    "CONCEPTS_LABEL": "Concetti",
-    "CONCEPTS_VALUE": "OOP, Sistemi Distribuiti, Architettura Event-Driven, API RESTful, CI/CD, Machine Learning",
-    "CERTIFICATE_LABEL": "Certificazione",
-    "CERTIFICATE_VALUE": "Google IT Support Professional Certificate — I.I.S.S. Luigi dell’Erba, Castellana Grotte (BA)"
+    "CAT_ENGINEERING": "Sviluppo Software",
+    "CAT_SECURITY": "Sicurezza",
+    "CAT_TOOLS": "Strumenti & Piattaforme",
+    "LEVEL_PROFESSIONAL": "Uso professionale",
+    "LEVEL_PROJECT": "Esperienza su progetti",
+    "LEVEL_LEARNING": "In fase di studio",
+    "LEGEND": "I livelli sono dichiarati in modo onesto: uso professionale, esperienza su progetti o in fase di studio — nessun indicatore gonfiato."
+  },
+  "CERTS": {
+    "TITLE": "Certificazioni & Percorso di studio",
+    "SUBTITLE": "A che punto sono nel percorso verso la cybersecurity: completate, in corso e pianificate.",
+    "STATUS_COMPLETED": "Completata",
+    "STATUS_IN_PROGRESS": "In corso",
+    "STATUS_PLANNED": "Pianificata",
+    "VERIFY": "Verifica credenziale"
   },
 
   "PORTFOLIO": {
-    "TITLE": "I miei progetti",
-    "PROJECT1": "Applicazione e-commerce in Angular",
-    "PROJECT2": "Sito portfolio responsive",
-    "PROJECT3": "Gestione contenuti con Symfony"
+    "TITLE": "Progetti selezionati",
+    "VISIT": "Visita il sito",
+    "MOVIEDUX_NAME": "MovieDux",
+    "MOVIEDUX_DESC": "Prototipo di interfaccia streaming con funzionalità di ricerca e filtraggio."
   },
   "CONTACT": {
     "TITLE": "Contattami",
