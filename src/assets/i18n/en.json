@@ -9,7 +9,7 @@
   "HERO": {
     "TITLE": "Hi, I’m",
     "SUB_DESCRIPTION": "Full-stack software engineer with a security focus.",
-    "DESCRIPTION": "Software engineer with 5+ years building and scaling web platforms with TypeScript, Angular, React, Symfony and Docker. I care about measurable outcomes: CI/CD pipelines that cut deploy times from 35 minutes to under 10, cloud migrations that reduced hosting costs by 30%, and performance work that cut peak database load by 38%. I'm now channelling that experience into cybersecurity — writing safer code and building hands-on skills through TryHackMe labs and the CompTIA Security+ path.",
+    "DESCRIPTION": "Software engineer with 5+ years of experience building and running web platforms, from React and TypeScript on the frontend to Symfony on the backend, through to servers, deployment and cloud. I like building software that is solid and maintainable, and I'm now broadening my skills in cybersecurity.",
     "BUTTON": "View My Resume",
     "BUTTON-LINK": "/Serjio_Santana_CV_en.pdf"
   },
@@ -18,9 +18,9 @@
     "ROLE": "Software Engineer",
     "SKILLS": "Skills",
     "EXPERIENCE": "Experience",
-    "TEXT": "Hi, I’m Serjio, a Software Engineer with 5+ years of experience across web development, cloud infrastructure and IT systems. I work with TypeScript, Angular, React, Symfony, Laravel and Docker, and I’ve led CI/CD adoption, cloud migrations and performance optimisation. I also mentor new engineers and document what I build.",
-    "SECURITY_TITLE": "Moving into cybersecurity",
-    "SECURITY_TEXT": "After years shipping and operating web platforms, I've seen first-hand how applications break — and I'd rather find those weaknesses before an attacker does. A developer background is a real advantage here: I understand authentication, input validation, dependencies and deployment from the inside, which makes secure coding and threat reasoning feel natural. I'm now formalising that direction with the Google Cybersecurity certificate, TryHackMe's Security Analyst path and the CompTIA Security+.",
+    "TEXT": "Hi, I’m Serjio, a Software Engineer with 5+ years of experience across web development, cloud infrastructure and IT systems. I work with TypeScript, Angular, React, Symfony and Laravel, and I also handle the infrastructure side: virtualisation, managing virtual machines and Docker containers, Linux servers, cloud migrations and performance optimisation. I also mentor new engineers and document what I build.",
+    "SECURITY_TITLE": "Security",
+    "SECURITY_TEXT": "Security has always been part of my work: over the years I've handled SSL certificates, DNS and email configuration, form protection, Linux server hardening and securing databases and web applications. As a developer I know authentication, input validation, dependencies and deployment from the inside, which is exactly where many vulnerabilities start. I'm now broadening my skills in this area, going deeper into network security, log analysis and incident handling to bring a more complete view of security alongside development.",
 
     "NATIONALITY_LABEL": "Nationality",
     "NATIONALITY_VALUE": "Italian",
@@ -39,7 +39,7 @@
     "JOB1_TITLE": "Software Engineer",
     "JOB1_COMPANY": "StudiWeb",
     "JOB1_PERIOD": "April 2023 - Present",
-    "JOB1_TASK1": "<strong>CI/CD &amp; deployment:</strong> Introduced automated CI/CD pipelines, cutting deploy time from 35 minutes to under 10 and reducing failed releases by 40%.",
+    "JOB1_TASK1": "<strong>Version control &amp; deployment:</strong> Managed code with Git and GitHub; set up basic GitHub Actions workflows to automate build and deploy for a few projects.",
     "JOB1_TASK2": "<strong>Web development (Symfony &amp; Angular):</strong> Design and maintenance of custom platforms in Symfony (PHP), TypeScript, Angular and HTML5/CSS3, including completing and shipping pre-existing TypeScript projects to production. Developed the company’s main website, contributing to a 30% increase in customer acquisition and conversion.",
     "JOB1_TASK3": "<strong>Performance &amp; cloud:</strong> Isolated overloaded sites and resolved resource bottlenecks, cutting peak-hour database load by 38%. Led cloud migrations of internal tools and websites, reducing hosting costs by 30% and maintenance time by 45%.",
     "JOB1_TASK4": "<strong>WordPress &amp; PrestaShop management:</strong> Installation and configuration of new sites, domain (DNS) management, email services and SSL certificates. Advanced technical support to the design team on bugs and general issues, including Elementor-based sites.",
@@ -64,7 +64,7 @@
     "LEVEL_PROFESSIONAL": "Professional use",
     "LEVEL_PROJECT": "Project experience",
     "LEVEL_LEARNING": "Currently learning",
-    "LEGEND": "Levels are self-reported and honest: professional use, project experience, or currently learning — no inflated meters."
+    "LEGEND": "Levels: professional use, project experience, or currently learning."
   },
   "CERTS": {
     "TITLE": "Certifications & Learning Path",
