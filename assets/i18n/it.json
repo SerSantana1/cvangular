@@ -2,12 +2,14 @@
   "MENU": {
     "ABOUT": "Chi sono",
     "PORTFOLIO": "Portfolio",
+    "CERTIFICATIONS": "Certificazioni",
+    "CV": "CV",
     "CONTACT": "Contatti"
   },
   "HERO": {
     "TITLE": "Ciao, sono",
-    "SUB_DESCRIPTION": "Software Engineer con oltre 5 anni di esperienza nella creazione e scalabilità di piattaforme web.",
-    "DESCRIPTION": "Software Engineer specializzato in piattaforme web e infrastruttura cloud. Lavoro con TypeScript, Angular, React, Symfony e Docker, con attenzione ai risultati misurabili: pipeline CI/CD che hanno ridotto i tempi di deploy da 35 a meno di 10 minuti, migrazioni cloud che hanno abbattuto i costi di hosting del 30% e ottimizzazioni che hanno ridotto del 38% il carico del database nelle ore di picco.",
+    "SUB_DESCRIPTION": "Software engineer full-stack con un focus sulla sicurezza.",
+    "DESCRIPTION": "Software engineer con oltre 5 anni di esperienza nello sviluppo e nella gestione di piattaforme web, dal frontend in React e TypeScript al backend in Symfony, fino a server, deploy e cloud. Mi piace costruire software solido e manutenibile, e oggi sto ampliando le mie competenze nella cybersecurity.",
     "BUTTON": "Visualizza il mio CV",
     "BUTTON-LINK": "/Serjio_Santana_CV_it.pdf"
   },
@@ -16,7 +18,9 @@
     "ROLE": "Software Engineer",
     "SKILLS": "Competenze",
     "EXPERIENCE": "Esperienze Lavorative",
-    "TEXT": "Ciao, sono Serjio, Software Engineer con oltre 5 anni di esperienza tra sviluppo web, infrastruttura cloud e sistemi IT. Lavoro con TypeScript, Angular, React, Symfony, Laravel e Docker; ho guidato l’adozione di CI/CD, migrazioni cloud e attività di ottimizzazione delle performance. Affianco inoltre i nuovi ingegneri e documento ciò che sviluppo.",
+    "TEXT": "Ciao, sono Serjio, Software Engineer con oltre 5 anni di esperienza tra sviluppo web, infrastruttura cloud e sistemi IT. Lavoro con TypeScript, Angular, React, Symfony e Laravel, e mi occupo anche della parte infrastrutturale: virtualizzazione, gestione di macchine virtuali e container Docker, server Linux, migrazioni cloud e ottimizzazione delle performance. Affianco inoltre i nuovi ingegneri e documento ciò che sviluppo.",
+    "SECURITY_TITLE": "Sicurezza informatica",
+    "SECURITY_TEXT": "La sicurezza ha sempre fatto parte del mio lavoro: in questi anni ho gestito certificati SSL, configurazioni DNS ed email, protezione dei form, hardening di server Linux e la messa in sicurezza di database e applicazioni web. Da sviluppatore conosco dall'interno autenticazione, validazione degli input, dipendenze e deployment, ed è proprio lì che nascono molte vulnerabilità. Oggi sto ampliando le mie competenze in questo ambito, approfondendo sicurezza delle reti, analisi dei log e gestione degli incidenti per affiancare allo sviluppo una visione più completa della sicurezza.",
 
     "NATIONALITY_LABEL": "Nazionalità",
     "NATIONALITY_VALUE": "Italiano",
@@ -35,7 +39,7 @@
     "JOB1_TITLE": "Software Engineer",
     "JOB1_COMPANY": "StudiWeb",
     "JOB1_PERIOD": "Aprile 2023 - Presente",
-    "JOB1_TASK1": "<strong>CI/CD e deploy:</strong> Introdotte pipeline CI/CD automatizzate, riducendo i tempi di deploy da 35 a meno di 10 minuti e le release fallite del 40%.",
+    "JOB1_TASK1": "<strong>Versionamento e deploy:</strong> Gestione del codice con Git e GitHub; configurati workflow di base con GitHub Actions per automatizzare build e deploy di alcuni progetti.",
     "JOB1_TASK2": "<strong>Sviluppo web (Symfony e Angular):</strong> Progettazione e manutenzione di piattaforme custom in Symfony (PHP), TypeScript, Angular e HTML5/CSS3, incluso il completamento e il rilascio in produzione di progetti TypeScript preesistenti. Sviluppato il sito web aziendale principale, contribuendo a un aumento del 30% dell’acquisizione clienti e dei tassi di conversione.",
     "JOB1_TASK3": "<strong>Performance e cloud:</strong> Isolati siti sovraccarichi e risolti i colli di bottiglia, riducendo del 38% il carico del database nelle ore di picco. Guidate le migrazioni al cloud di strumenti interni e siti web, riducendo i costi di hosting del 30% e i tempi di manutenzione del 45%.",
     "JOB1_TASK4": "<strong>Gestione WordPress e PrestaShop:</strong> Installazione e configurazione di nuovi siti, gestione di domini (DNS), servizi email e certificati SSL. Supporto tecnico avanzato al team di design nella gestione di bug e problematiche generali, inclusi i siti sviluppati con Elementor.",
@@ -54,22 +58,28 @@
   },
 
   "SKILLS": {
-    "STACK_TITLE": "Competenze tecniche",
-    "LANGUAGES_LABEL": "Linguaggi di programmazione",
-    "LANGUAGES_VALUE": "JavaScript (ES6+), TypeScript, PHP, Bash, SQL, HTML, CSS",
-    "FRAMEWORKS_LABEL": "Framework e strumenti",
-    "FRAMEWORKS_VALUE": "React, Angular, Symfony, Laravel, Backbone, Docker, FastAPI",
-    "CONCEPTS_LABEL": "Concetti",
-    "CONCEPTS_VALUE": "OOP, Sistemi Distribuiti, Architettura Event-Driven, API RESTful, CI/CD, Machine Learning",
-    "CERTIFICATE_LABEL": "Certificazione",
-    "CERTIFICATE_VALUE": "Google IT Support Professional Certificate — I.I.S.S. Luigi dell’Erba, Castellana Grotte (BA)"
+    "CAT_ENGINEERING": "Sviluppo Software",
+    "CAT_SECURITY": "Sicurezza",
+    "CAT_TOOLS": "Strumenti & Piattaforme",
+    "LEVEL_PROFESSIONAL": "Uso professionale",
+    "LEVEL_PROJECT": "Esperienza su progetti",
+    "LEVEL_LEARNING": "In fase di studio",
+    "LEGEND": "Livelli: uso professionale, esperienza su progetti o in fase di studio."
+  },
+  "CERTS": {
+    "TITLE": "Certificazioni & Percorso di studio",
+    "SUBTITLE": "A che punto sono nel percorso verso la cybersecurity: completate, in corso e pianificate.",
+    "STATUS_COMPLETED": "Completata",
+    "STATUS_IN_PROGRESS": "In corso",
+    "STATUS_PLANNED": "Pianificata",
+    "VERIFY": "Verifica credenziale"
   },
 
   "PORTFOLIO": {
-    "TITLE": "I miei progetti",
-    "PROJECT1": "Applicazione e-commerce in Angular",
-    "PROJECT2": "Sito portfolio responsive",
-    "PROJECT3": "Gestione contenuti con Symfony"
+    "TITLE": "Progetti selezionati",
+    "VISIT": "Visita il sito",
+    "MOVIEDUX_NAME": "MovieDux",
+    "MOVIEDUX_DESC": "Prototipo di interfaccia streaming con funzionalità di ricerca e filtraggio."
   },
   "CONTACT": {
     "TITLE": "Contattami",
